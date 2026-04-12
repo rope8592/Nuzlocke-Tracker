@@ -517,7 +517,7 @@ function renderEncounterMethods(entry, caughtSpecies) {
   const methodElements = [];
 
   function getOddsColor(count) {
-    if (count <= 0) return "#999";
+    if (count <= 0) return "#cbd5e1";
     if (count === 1) return "#0a7";
     if (count <= 3) return "#2b7";
     if (count <= 6) return "#a76b00";
@@ -536,11 +536,12 @@ function renderEncounterMethods(entry, caughtSpecies) {
       <div
         key={keyBase}
         style={{
-          border: "1px solid #d7dbe2",
+          border: isGuaranteed ? "1px solid #1d4ed8" : "1px solid #d7dbe2",
           borderRadius: 10,
           padding: 10,
           marginBottom: 10,
-          background: isGuaranteed ? "#f2fff6" : "#fff",
+          background: isGuaranteed ? "#0f2a44" : "#1f2937",
+          transition: "0.2s ease",
         }}
       >
         <div
@@ -562,7 +563,8 @@ function renderEncounterMethods(entry, caughtSpecies) {
                 fontSize: 12,
                 padding: "3px 8px",
                 borderRadius: 999,
-                background: "#eef2ff",
+                background: "#374151",
+                color: "#e5e7eb",
               }}
             >
               Total: {visibleMons.length}
@@ -572,7 +574,7 @@ function renderEncounterMethods(entry, caughtSpecies) {
                 fontSize: 12,
                 padding: "3px 8px",
                 borderRadius: 999,
-                background: "#f3f4f6",
+                background: "#374151",
                 color: oddsColor,
                 fontWeight: "bold",
               }}
@@ -585,12 +587,12 @@ function renderEncounterMethods(entry, caughtSpecies) {
                   fontSize: 12,
                   padding: "3px 8px",
                   borderRadius: 999,
-                  background: "#dcfce7",
-                  color: "#166534",
+                  background: "#1e3a8a",
+                  color: "#93c5fd",
                   fontWeight: "bold",
                 }}
               >
-                Guaranteed after Dupes
+                ⭐ Guaranteed after Dupes
               </span>
             )}
           </div>
@@ -606,8 +608,8 @@ function renderEncounterMethods(entry, caughtSpecies) {
                   fontSize: 13,
                   padding: "4px 8px",
                   borderRadius: 999,
-                  background: eligible ? "#eef6ff" : "#f1f1f1",
-                  color: eligible ? "#124" : "#888",
+                  background: eligible ? "#374151" : "#111827",
+                  color: eligible ? "#e5e7eb" : "#6b7280",
                   textDecoration: eligible ? "none" : "line-through",
                 }}
               >
@@ -617,7 +619,7 @@ function renderEncounterMethods(entry, caughtSpecies) {
           })}
         </div>
 
-        <div style={{ fontSize: 13, color: "#555" }}>
+        <div style={{ fontSize: 13, color: "#d1d5db" }}>
           <strong>{label} odds:</strong>{" "}
           {eligibleMons.length > 0
             ? eligibleMons
@@ -629,15 +631,26 @@ function renderEncounterMethods(entry, caughtSpecies) {
     );
   }
 
-  function traverse(obj, prefix = "") {
+  function getNestedLevel(levelObj, pathParts) {
+    let current = levelObj;
+    for (const part of pathParts) {
+      if (!current || typeof current !== "object") return "";
+      current = current[part];
+    }
+    return typeof current === "string" ? current : "";
+  }
+
+  function traverse(obj, prefix = "", pathParts = []) {
     if (Array.isArray(obj)) {
       const cleanLabel = formatMethodLabel(prefix || "Encounters");
+      const levelText = getNestedLevel(entry.methodLevels || {}, pathParts);
+      const displayLabel = levelText ? `${cleanLabel} (${levelText})` : cleanLabel;
       methodElements.push(
-        renderMethodCard(cleanLabel, obj, `${entry.area}-${prefix || "encounters"}`)
+        renderMethodCard(displayLabel, obj, `${entry.area}-${prefix || "encounters"}`)
       );
     } else if (typeof obj === "object" && obj !== null) {
       Object.entries(obj).forEach(([key, val]) => {
-        traverse(val, prefix ? `${prefix} ${key}` : key);
+        traverse(val, prefix ? `${prefix} ${key}` : key, [...pathParts, key]);
       });
     }
   }
@@ -650,7 +663,7 @@ const graveIcon = "💀";
   const shinyIcon = "🌟";
   const graveStyle = {
     border: "1px solid #900",
-    backgroundColor: "#fdd",
+    backgroundColor: "#3a1f1f",
     padding: 8,
     borderRadius: 5,
     marginBottom: 6,
@@ -862,7 +875,7 @@ const groupedFilteredGraveyard = filteredGraveyard.reduce((acc, mon) => {
           <div style={{ marginBottom: 16 }}>
             <button onClick={resetAllEncounters}>Reset Encounters</button>
           </div>
-          <div style={{ marginBottom: 20, padding: 10, background: "#eef" }}>
+          <div style={{ marginBottom: 20, padding: 10, background: "#1f2937" }}>
             <label>
               <strong>Your Starter: </strong>
               <select value={starter} disabled style={{ marginRight: 20, minWidth: 110 }}>
@@ -873,7 +886,7 @@ const groupedFilteredGraveyard = filteredGraveyard.reduce((acc, mon) => {
                   </option>
                 ))}
               </select>
-              <span style={{ color: "#666", fontSize: 13 }}>
+              <span style={{ color: "#d1d5db", fontSize: 13 }}>
                 &nbsp;(Set automatically by Aquacorde Town catch)
               </span>
             </label>
@@ -906,7 +919,7 @@ const groupedFilteredGraveyard = filteredGraveyard.reduce((acc, mon) => {
                         borderRadius: 7,
                         margin: "18px 0",
                         padding: "12px 12px 8px 12px",
-                        background: "#fee",
+                        background: "#3a1f1f",
                         color: "#900",
                       }}
                     >
@@ -928,7 +941,7 @@ const groupedFilteredGraveyard = filteredGraveyard.reduce((acc, mon) => {
                       borderRadius: 7,
                       margin: "18px 0",
                       padding: "12px 12px 8px 12px",
-                      background: "#fafcff",
+                      background: "#1f2937",
                     }}
                   >
                     <h3 style={{ marginTop: 0, display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
@@ -940,16 +953,16 @@ const groupedFilteredGraveyard = filteredGraveyard.reduce((acc, mon) => {
                           borderRadius: 999,
                           background:
                             entry.status === "Caught"
-                              ? "#dcfce7"
+                              ? "#163322"
                               : entry.status === "Fainted"
-                              ? "#fee2e2"
-                              : "#e5e7eb",
+                              ? "#3a1f1f"
+                              : "#374151",
                           color:
                             entry.status === "Caught"
                               ? "#166534"
                               : entry.status === "Fainted"
-                              ? "#991b1b"
-                              : "#374151",
+                              ? "#fca5a5"
+                              : "#e5e7eb",
                           fontWeight: "bold",
                         }}
                       >
@@ -959,7 +972,7 @@ const groupedFilteredGraveyard = filteredGraveyard.reduce((acc, mon) => {
                           ? "💀 Failed"
                           : "❌ Open"}
                       </span>
-                      <span style={{ fontSize: 13, color: "#999" }}>
+                      <span style={{ fontSize: 13, color: "#cbd5e1" }}>
                         (Level Cap: {entry.levelCap || "?"})
                       </span>
                     </h3>
@@ -977,7 +990,8 @@ const groupedFilteredGraveyard = filteredGraveyard.reduce((acc, mon) => {
                           fontSize: 12,
                           padding: "4px 8px",
                           borderRadius: 999,
-                          background: "#eef2ff",
+                          background: "#374151",
+                color: "#e5e7eb",
                         }}
                       >
                         Total encounters: {possibleMons.filter((m) => m !== "No encounters").length}
@@ -987,7 +1001,8 @@ const groupedFilteredGraveyard = filteredGraveyard.reduce((acc, mon) => {
                           fontSize: 12,
                           padding: "4px 8px",
                           borderRadius: 999,
-                          background: "#f3f4f6",
+                          background: "#374151",
+                          color: "#e5e7eb",
                           fontWeight: "bold",
                         }}
                       >
@@ -1159,7 +1174,7 @@ const groupedFilteredGraveyard = filteredGraveyard.reduce((acc, mon) => {
                   <div
                     key={boss.id}
                     style={{
-                      background: isDefeated ? "#d4ffd4" : "#ffe",
+                      background: isDefeated ? "#d4ffd4" : "#2a2416",
                       border: isDefeated ? "2px solid #080" : "1px solid #cc3",
                       borderRadius: 8,
                       margin: "20px 0",
@@ -1180,7 +1195,7 @@ const groupedFilteredGraveyard = filteredGraveyard.reduce((acc, mon) => {
                       }}
                     >
                       {boss.name}{" "}
-                      <span style={{ color: "#888", fontSize: 14 }}>
+                      <span style={{ color: "#cbd5e1", fontSize: 14 }}>
                         ({boss.location || "?"}) | Level Cap: {boss.levelCap || "?"}
                       </span>
                       <span style={{ float: "right", fontWeight: 400 }}>
@@ -1190,7 +1205,7 @@ const groupedFilteredGraveyard = filteredGraveyard.reduce((acc, mon) => {
                         style={{
                           float: "right",
                           marginRight: 10,
-                          background: isDefeated ? "#7ee37e" : "#ffe",
+                          background: isDefeated ? "#7ee37e" : "#2a2416",
                           border: "1px solid #090",
                           borderRadius: 5,
                           cursor: "pointer"
@@ -1228,7 +1243,7 @@ const groupedFilteredGraveyard = filteredGraveyard.reduce((acc, mon) => {
                           <>
                             <div style={{ margin: "10px 0 2px 0" }}>
                               <b>Conditional Team:</b>
-                              <span style={{ fontSize: 13, color: "#888" }}>
+                              <span style={{ fontSize: 13, color: "#cbd5e1" }}>
                                 {" "}
                                 (varies by starter and/or player)
                               </span>
@@ -1262,7 +1277,7 @@ const groupedFilteredGraveyard = filteredGraveyard.reduce((acc, mon) => {
 {activeTab === "box" && (
   <div style={{ marginBottom: 20 }}>
     <h2>All Living Caught Pokémon</h2>
-    <p style={{ color: "#666", marginTop: -4 }}>
+    <p style={{ color: "#d1d5db", marginTop: -4 }}>
       Includes party members and boxed Pokémon.
     </p>
     <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 16 }}>
@@ -1283,11 +1298,11 @@ const groupedFilteredGraveyard = filteredGraveyard.reduce((acc, mon) => {
       <p>No caught Pokémon match your search.</p>
     ) : (
       Object.entries(groupedBoxByLocation).map(([location, mons]) => (
-        <div key={location} style={{ border: "1px solid #bbb", borderRadius: 10, margin: "18px 0", padding: 12, background: "#fafcff" }}>
+        <div key={location} style={{ border: "1px solid #bbb", borderRadius: 10, margin: "18px 0", padding: 12, background: "#1f2937" }}>
           <h3 style={{ marginTop: 0 }}>{location}</h3>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))", gap: 12 }}>
             {mons.map((mon, i) => (
-              <div key={mon.id + mon.shiny + i} style={{ border: "1px solid #ddd", borderRadius: 10, padding: 10, background: "white", display: "flex", alignItems: "center", gap: 10, justifyContent: "space-between" }}>
+              <div key={mon.id + mon.shiny + i} style={{ border: "1px solid #ddd", borderRadius: 10, padding: 10, background: "#1f2937", display: "flex", alignItems: "center", gap: 10, justifyContent: "space-between" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
                   <img
                     src={getSpriteUrl(mon.id)}
@@ -1299,8 +1314,8 @@ const groupedFilteredGraveyard = filteredGraveyard.reduce((acc, mon) => {
                     <div style={{ fontWeight: "bold" }}>
                       {mon.shiny ? shinyIcon : ""}{mon.nickname || mon.id}
                     </div>
-                    {mon.nickname && <div style={{ fontSize: 13, color: "#666" }}>{mon.id}</div>}
-                    <div style={{ fontSize: 13, color: "#666" }}>{mon.area}</div>
+                    {mon.nickname && <div style={{ fontSize: 13, color: "#d1d5db" }}>{mon.id}</div>}
+                    <div style={{ fontSize: 13, color: "#d1d5db" }}>{mon.area}</div>
                   </div>
                 </div>
                 <div style={{ display: "flex", gap: 6, flexWrap: "wrap", justifyContent: "flex-end" }}>
@@ -1333,7 +1348,7 @@ const groupedFilteredGraveyard = filteredGraveyard.reduce((acc, mon) => {
     <h2>
       Graveyard <span style={{ fontSize: 13, color: "#b00", marginLeft: 8 }}>(all deaths)</span>
     </h2>
-    <p style={{ color: "#666", marginTop: -4 }}>
+    <p style={{ color: "#d1d5db", marginTop: -4 }}>
       Total deaths: <strong>{graveyard.length}</strong>
     </p>
     <div style={{ marginBottom: 16 }}>
@@ -1395,7 +1410,7 @@ const groupedFilteredGraveyard = filteredGraveyard.reduce((acc, mon) => {
     left: 0,
     width: "100%",
     background: "linear-gradient(180deg, #1f1f1f 0%, #141414 100%)",
-    color: "white",
+    color: "#1f2937",
     padding: "12px 14px",
     display: "flex",
     justifyContent: "center",
@@ -1500,7 +1515,7 @@ const groupedFilteredGraveyard = filteredGraveyard.reduce((acc, mon) => {
                 padding: "4px 8px",
                 borderRadius: 8,
                 background: "#7f1d1d",
-                color: "white",
+                color: "#1f2937",
                 border: "1px solid #991b1b",
               }}
             >
@@ -1526,7 +1541,7 @@ const groupedFilteredGraveyard = filteredGraveyard.reduce((acc, mon) => {
           minWidth: 92,
           minHeight: 132,
           background: party.length >= 6 ? "#2a2a2a" : "#1f2937",
-          color: "white",
+          color: "#1f2937",
           border: "1px dashed #6b7280",
           borderRadius: 14,
           fontSize: 28,
@@ -1568,7 +1583,7 @@ const groupedFilteredGraveyard = filteredGraveyard.reduce((acc, mon) => {
         maxHeight: "85vh",
         overflowY: "auto",
         background: "#1f1f1f",
-        color: "white",
+        color: "#1f2937",
         borderRadius: 20,
         padding: 20,
         boxShadow: "0 10px 30px rgba(0,0,0,0.4)",
@@ -1617,7 +1632,7 @@ const groupedFilteredGraveyard = filteredGraveyard.reduce((acc, mon) => {
                 borderRadius: 16,
                 padding: 10,
                 cursor: "pointer",
-                color: "white",
+                color: "#1f2937",
                 position: "relative",
               }}
             >
@@ -1675,8 +1690,8 @@ const groupedFilteredGraveyard = filteredGraveyard.reduce((acc, mon) => {
             borderRadius: 14,
             fontSize: 16,
             background: !selectedBoxMon || party.length >= 6 ? "#333" : "#111",
-            color: "white",
-            border: "1px solid #888",
+            color: "#1f2937",
+            border: "1px solid #cbd5e1",
             cursor: !selectedBoxMon || party.length >= 6 ? "not-allowed" : "pointer",
           }}
         >
@@ -1687,7 +1702,7 @@ const groupedFilteredGraveyard = filteredGraveyard.reduce((acc, mon) => {
   </div>
 )}
 
-      <footer style={{ marginTop: 30, fontSize: 14, color: "#888" }}>
+      <footer style={{ marginTop: 30, fontSize: 14, color: "#cbd5e1" }}>
         Nuzlocke Tracker &copy; 2025 | Custom for Wilting Y | Developed by Chris Roper & GPT
       </footer>
     </div>

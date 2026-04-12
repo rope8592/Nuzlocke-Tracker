@@ -8,6 +8,9 @@ const defaultEncounters = [
         "Fennekin",
         "Chespin"
       ]
+    },
+    "methodLevels": {
+      "gift": "Level 5"
     }
   },
   {
@@ -35,7 +38,14 @@ const defaultEncounters = [
         "Weedle",
         "Bonsly",
         "Surskit"
+      ],
+      "secondPatchGrass": [
+        "Torchic"
       ]
+    },
+    "methodLevels": {
+      "grass": "Level 2-3",
+      "secondPatchGrass": "Level 5"
     }
   },
   {
@@ -55,6 +65,9 @@ const defaultEncounters = [
         "Pikachu",
         "Slakoth"
       ]
+    },
+    "methodLevels": {
+      "grass": "Level 3-5"
     }
   },
   {
@@ -93,6 +106,13 @@ const defaultEncounters = [
         "Marill",
         "Azumarill"
       ]
+    },
+    "methodLevels": {
+      "grass": "Level 6-7",
+      "oldRod": "Level 19-24",
+      "goodRod": "Level 35",
+      "superRod": "Level 45",
+      "surf": "Level 32-35"
     }
   },
   {
@@ -140,6 +160,14 @@ const defaultEncounters = [
         "Psyduck",
         "Azumarill"
       ]
+    },
+    "methodLevels": {
+      "grass": "Level 9-10",
+      "yellowFlowers": "Level 70-72",
+      "oldRod": "Level 19-24",
+      "goodRod": "Level 35",
+      "superRod": "Level 45",
+      "surf": "Level 40-42"
     }
   },
   {
@@ -169,6 +197,10 @@ const defaultEncounters = [
         "Flabébé (Orange)",
         "Flabébé (Green)"
       ]
+    },
+    "methodLevels": {
+      "yellowFlowers": "Level 11-13",
+      "redFlowers": "Level 11-13"
     }
   },
   {
@@ -234,6 +266,10 @@ const defaultEncounters = [
         "Plusle",
         "Minun"
       ]
+    },
+    "methodLevels": {
+      "grass": "Level 14-16",
+      "purpleFlowers": "Level 14-16"
     }
   },
   {
@@ -256,6 +292,9 @@ const defaultEncounters = [
         "Audino",
         "Venipede"
       ]
+    },
+    "methodLevels": {
+      "tallGrass": "Level 17-19"
     }
   },
   {
@@ -277,6 +316,11 @@ const defaultEncounters = [
         "Crawdaunt",
         "Milotic"
       ]
+    },
+    "methodLevels": {
+      "oldRod": "Level 19-24",
+      "goodRod": "Level 35",
+      "superRod": "Level 45"
     }
   },
   {
@@ -319,6 +363,11 @@ const defaultEncounters = [
         "Piplup",
         "Roselia"
       ]
+    },
+    "methodLevels": {
+      "grass": "Level 19-21",
+      "yellowFlowers": "Level 19-21",
+      "purpleFlowers": "Level 19-21"
     }
   },
   {
@@ -364,6 +413,9 @@ const defaultEncounters = [
         "Drilbur",
         "Axew"
       ]
+    },
+    "methodLevels": {
+      "cave": "Level 18-20"
     }
   },
   {
@@ -419,6 +471,15 @@ const defaultEncounters = [
         "Rufflet",
         "Vullaby"
       ]
+    },
+    "methodLevels": {
+      "grass": "Level 20-22",
+      "yellowFlowers": "Level 19-22",
+      "rockSmash": "Level 20-23",
+      "oldRod": "Level 24",
+      "goodRod": "Level 35",
+      "superRod": "Level 45",
+      "surf": "Level 32-34"
     }
   },
   {
@@ -446,6 +507,13 @@ const defaultEncounters = [
         "Tentacool",
         "Wailmer"
       ]
+    },
+    "methodLevels": {
+      "rockSmash": "Level 18-20",
+      "oldRod": "Level 21-22",
+      "goodRod": "Level 35",
+      "superRod": "Level 45",
+      "surf": "Level 32-34"
     }
   },
   {
@@ -462,6 +530,9 @@ const defaultEncounters = [
         "Numel",
         "Larvesta"
       ]
+    },
+    "methodLevels": {
+      "roughTerrain": "Level 21-23"
     }
   },
   {
@@ -488,6 +559,10 @@ const defaultEncounters = [
         "Woobat",
         "Ferroseed"
       ]
+    },
+    "methodLevels": {
+      "cave": "Level 22-24",
+      "rockSmash": "Level 23-25"
     }
   },
   {
@@ -518,6 +593,13 @@ const defaultEncounters = [
         "Wailmer",
         "Wingull"
       ]
+    },
+    "methodLevels": {
+      "rockSmash": "Level 24-26",
+      "oldRod": "Level 26",
+      "goodRod": "Level 35",
+      "superRod": "Level 45",
+      "surf": "Level 32-34"
     }
   },
   {
@@ -548,6 +630,10 @@ const defaultEncounters = [
         "Snivy",
         "Tyrogue"
       ]
+    },
+    "methodLevels": {
+      "grass": "Level 24-26",
+      "yellowFlowers": "Level 24-26"
     }
   },
   {
@@ -573,6 +659,9 @@ const defaultEncounters = [
         "Nidoran♀",
         "Timburr"
       ]
+    },
+    "methodLevels": {
+      "grass": "Level 26-28"
     }
   },
   {
@@ -655,6 +744,20 @@ const defaultEncounters = [
         "Woobat",
         "Ferroseed"
       ]
+    },
+    "methodLevels": {
+      "1F": {
+        "cave": "Level 29-31"
+      },
+      "B1F": {
+        "cave": "Level 29-31"
+      },
+      "B2F": {
+        "cave": "Level 29-31"
+      },
+      "B2F - Alakazite Room": {
+        "cave": "Level 29-31"
+      }
     }
   },
   {
@@ -679,6 +782,12 @@ const defaultEncounters = [
         "Frillish",
         "Mantyke"
       ]
+    },
+    "methodLevels": {
+      "oldRod": "Level 30",
+      "goodRod": "Level 35",
+      "superRod": "Level 45",
+      "surf": "Level 32-34"
     }
   },
   {
@@ -688,6 +797,9 @@ const defaultEncounters = [
       "gift": [
         "Lucario"
       ]
+    },
+    "methodLevels": {
+      "gift": "Gift"
     }
   },
   {
@@ -742,6 +854,15 @@ const defaultEncounters = [
         "Tauros",
         "Miltank"
       ]
+    },
+    "methodLevels": {
+      "grass": "Level 30-32",
+      "yellowFlowers": "Level 30-32",
+      "rockSmash": "Level 30-32",
+      "oldRod": "Level 30",
+      "goodRod": "Level 35",
+      "superRod": "Level 45",
+      "surf": "Level 30-32"
     }
   },
   {
@@ -788,6 +909,13 @@ const defaultEncounters = [
         "Slowpoke",
         "Exeggcute"
       ]
+    },
+    "methodLevels": {
+      "grass": "Level 31-33",
+      "oldRod": "Level 30",
+      "goodRod": "Level 35",
+      "superRod": "Level 45",
+      "surf": "Level 30-33"
     }
   },
   {
@@ -811,6 +939,9 @@ const defaultEncounters = [
         "Trapinch",
         "Gible"
       ]
+    },
+    "methodLevels": {
+      "roughTerrain": "Level 34-36"
     }
   },
   {
@@ -863,6 +994,14 @@ const defaultEncounters = [
         "Mudkip",
         "Goomy"
       ]
+    },
+    "methodLevels": {
+      "grass": "Level 42-44",
+      "shallowWater": "Level 42-44",
+      "oldRod": "Level 35",
+      "goodRod": "Level 42",
+      "superRod": "Level 45",
+      "surf": "Level 43-45"
     }
   },
   {
@@ -881,6 +1020,11 @@ const defaultEncounters = [
         "Basculin",
         "Poliwrath"
       ]
+    },
+    "methodLevels": {
+      "oldRod": "Level 30",
+      "goodRod": "Level 35",
+      "superRod": "Level 50"
     }
   },
   {
@@ -931,6 +1075,14 @@ const defaultEncounters = [
         "Treecko",
         "Porygon"
       ]
+    },
+    "methodLevels": {
+      "grass": "Level 45-47",
+      "redFlowers": "Level 45-47",
+      "oldRod": "Level 35",
+      "goodRod": "Level 40",
+      "superRod": "Level 45",
+      "surf": "Level 44-46"
     }
   },
   {
@@ -953,6 +1105,9 @@ const defaultEncounters = [
       "trashTuesday": [
         "Rotom"
       ]
+    },
+    "methodLevels": {
+      "building": "Level 46-48"
     }
   },
   {
@@ -997,6 +1152,14 @@ const defaultEncounters = [
         "Bulbasaur",
         "Tropius"
       ]
+    },
+    "methodLevels": {
+      "yellowFlowers": "Level 46-48",
+      "tallGrass": "Level 46-48",
+      "oldRod": "Level 35",
+      "goodRod": "Level 40",
+      "superRod": "Level 45",
+      "surf": "Level 45-47"
     }
   },
   {
@@ -1087,6 +1250,27 @@ const defaultEncounters = [
           "Smoochum"
         ]
       }
+    },
+    "methodLevels": {
+      "outside": {
+        "oldRod": "Level 40",
+        "goodRod": "Level 45",
+        "superRod": "Level 50",
+        "surf": "Level 48-50"
+      },
+      "1F": {
+        "cave": "Level 50-52"
+      },
+      "2F": {
+        "cave": "Level 50-52",
+        "oldRod": "Level 40",
+        "goodRod": "Level 45",
+        "superRod": "Level 50",
+        "surf": "Level 50-52"
+      },
+      "3F & Ice Rock Room": {
+        "cave": "Level 50-52"
+      }
     }
   },
   {
@@ -1099,6 +1283,9 @@ const defaultEncounters = [
         "Sneasel",
         "Abomasnow"
       ]
+    },
+    "methodLevels": {
+      "snow": "Level 54-56"
     }
   },
   {
@@ -1108,6 +1295,9 @@ const defaultEncounters = [
       "static": [
         "Yveltal"
       ]
+    },
+    "methodLevels": {
+      "static": "Static"
     }
   },
   {
@@ -1148,6 +1338,11 @@ const defaultEncounters = [
         "Heatmor",
         "Durant"
       ]
+    },
+    "methodLevels": {
+      "grass": "Level 60-62",
+      "redFlowers": "Level 60-62",
+      "rockSmash": "Level 60-62"
     }
   },
   {
@@ -1226,6 +1421,26 @@ const defaultEncounters = [
         "Ariados",
         "Noibat"
       ]
+    },
+    "methodLevels": {
+      "allAreas": {
+        "cave": "Level 61-63"
+      },
+      "1F": {
+        "cave": "Level 61-63"
+      },
+      "B1F (Both Rooms)": {
+        "cave": "Level 61-63"
+      },
+      "B2F": {
+        "cave": "Level 61-63"
+      },
+      "Small Room, B1F (accessible from Route 18)": {
+        "cave": "Level 61-63"
+      },
+      "Small Room, 1F (accessible from Route 18)": {
+        "cave": "Level 61-63"
+      }
     }
   },
   {
@@ -1247,6 +1462,12 @@ const defaultEncounters = [
         "Lombre",
         "Floatzel"
       ]
+    },
+    "methodLevels": {
+      "oldRod": "Level 25",
+      "goodRod": "Level 35",
+      "superRod": "Level 45",
+      "surf": "Level 44-46"
     }
   },
   {
@@ -1307,6 +1528,15 @@ const defaultEncounters = [
         "Gligar",
         "Arbok"
       ]
+    },
+    "methodLevels": {
+      "yellowFlowers": "Level 62-64",
+      "purpleFlowers": "Level 62-64",
+      "shallowWater": "Level 62-63",
+      "oldRod": "Level 45",
+      "goodRod": "Level 55",
+      "superRod": "Level 65",
+      "surf": "Level 62-64"
     }
   },
   {
@@ -1335,6 +1565,10 @@ const defaultEncounters = [
         "Trevenant",
         "Sudowoodo"
       ]
+    },
+    "methodLevels": {
+      "grass": "Level 64-66",
+      "redFlowers": "Level 64-66"
     }
   },
   {
@@ -1397,6 +1631,14 @@ const defaultEncounters = [
       "trashThursday": [
         "Banette"
       ]
+    },
+    "methodLevels": {
+      "yellowFlowers": "Level 64-66",
+      "purpleFlowers": "Level 64-66",
+      "oldRod": "Level 40",
+      "goodRod": "Level 50",
+      "superRod": "Level 65",
+      "surf": "Level 64-66"
     }
   },
   {
@@ -1443,6 +1685,14 @@ const defaultEncounters = [
         "Swablu",
         "Scyther"
       ]
+    },
+    "methodLevels": {
+      "purpleFlowers": "Level 65-67",
+      "redFlowers": "Level 65-67",
+      "oldRod": "Level 50",
+      "goodRod": "Level 55",
+      "superRod": "Level 65",
+      "surf": "Level 65-67"
     }
   },
   {
@@ -1592,6 +1842,34 @@ const defaultEncounters = [
         "Skarmory",
         "Hydreigon"
       ]
+    },
+    "methodLevels": {
+      "1F": {
+        "cave": "Level 70-72",
+        "oldRod": "Level 55",
+        "goodRod": "Level 65",
+        "superRod": "Level 75",
+        "surf": "Level 70-72"
+      },
+      "2F": {
+        "cave": "Level 70-72"
+      },
+      "3F": {
+        "cave": "Level 70-72"
+      },
+      "Waterfall Area": {
+        "oldRod": "Level 55",
+        "goodRod": "Level 65",
+        "superRod": "Level 75",
+        "surf": "Level 70-72"
+      },
+      "Final Cave": {
+        "cave": "Level 70-72",
+        "oldRod": "Level 55",
+        "goodRod": "Level 65",
+        "superRod": "Level 75-76",
+        "surf": "Level 70-72"
+      }
     }
   },
   {
@@ -1601,6 +1879,9 @@ const defaultEncounters = [
       "cave": [
         "Mewtwo"
       ]
+    },
+    "methodLevels": {
+      "cave": "Post-Game"
     }
   },
   {
@@ -1610,6 +1891,9 @@ const defaultEncounters = [
       "static": [
         "None – Only contains TM or Mega Stone"
       ]
+    },
+    "methodLevels": {
+      "static": "Post-Game"
     }
   },
   {
