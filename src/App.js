@@ -139,6 +139,20 @@ function normalizeSpriteSlug(name) {
     .toLowerCase();
 }
 
+function normalizeEvolutionKey(name) {
+  return String(name)
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/♀/g, "_f")
+    .replace(/♂/g, "_m")
+    .replace(/\([^)]*\)/g, "")
+    .replace(/['’.:]/g, "")
+    .replace(/-/g, " ")
+    .replace(/\s+/g, "_")
+    .replace(/^_+|_+$/g, "")
+    .toLowerCase();
+}
+
 function getSpriteUrl(name) {
   const slug = normalizeSpriteSlug(name);
   return `https://img.pokemondb.net/sprites/scarlet-violet/icon/${slug}.png`;
@@ -263,9 +277,9 @@ function App() {
       .map((e) => e.caughtPokemon);
     const all = new Set();
     caught.forEach((mon) => {
-      const key = (typeof mon === "string" ? mon : String(mon)).toLowerCase();
-      const family = evolutionFamilies[key] || [key];
-      family.forEach((f) => all.add(f.toLowerCase()));
+      const key = normalizeEvolutionKey(mon);
+      const family = evolutionFamilies[key] || [mon];
+      family.forEach((f) => all.add(normalizeEvolutionKey(f)));
     });
     return all;
   };
@@ -386,11 +400,27 @@ function App() {
   };
 
   const evolveMon = (id, shiny = false, container, setContainer) => {
-    const key = id.toLowerCase();
-    const family = evolutionFamilies[key] || [id];
-    const curIdx = family.map((f) => f.toLowerCase()).indexOf(key);
-    if (curIdx === -1 || curIdx === family.length - 1) return;
-    const nextForm = family[curIdx + 1];
+    const key = normalizeEvolutionKey(id);
+    let nextForm = null;
+
+    if (key === "wurmple") {
+      const choice = window.prompt("Evolve Wurmple into Silcoon or Cascoon?", "Silcoon");
+      if (choice === null) return;
+      const normalizedChoice = String(choice).trim().toLowerCase();
+      if (normalizedChoice.startsWith("sil")) nextForm = "Silcoon";
+      else if (normalizedChoice.startsWith("cas")) nextForm = "Cascoon";
+      else return;
+    } else if (key === "silcoon") {
+      nextForm = "Beautifly";
+    } else if (key === "cascoon") {
+      nextForm = "Dustox";
+    } else {
+      const family = evolutionFamilies[key] || [id];
+      const curIdx = family.map((f) => normalizeEvolutionKey(f)).indexOf(key);
+      if (curIdx === -1 || curIdx === family.length - 1) return;
+      nextForm = family[curIdx + 1];
+    }
+
     setContainer((arr) =>
       arr.map((mon) =>
         mon.id === id && !!mon.shiny === !!shiny ? { ...mon, id: nextForm } : mon
@@ -524,13 +554,33 @@ function renderEncounterMethods(entry, caughtSpecies) {
     return "#b33";
   }
 
-  function renderMethodCard(label, mons, keyBase) {
+  function getNestedMeta(metaObj, pathParts) {
+    let current = metaObj;
+    for (const part of pathParts) {
+      if (!current || typeof current !== "object") return null;
+      current = current[part];
+    }
+    return current && typeof current === "object" && !Array.isArray(current) ? current : null;
+  }
+
+  function renderMethodCard(label, mons, keyBase, rateMap = null) {
     const visibleMons = mons.filter((m) => m !== "No encounters");
-    const eligibleMons = visibleMons.filter(
-      (m) => !caughtSpecies.has(String(m).toLowerCase())
+    const rawWeights = visibleMons.map((m) => ({
+      name: m,
+      weight: rateMap && typeof rateMap[m] === "number" ? rateMap[m] : 0,
+    }));
+    const hasDefinedWeights = rawWeights.some((entry) => entry.weight > 0);
+    const weightedMons = rawWeights.map((entry) => ({
+      ...entry,
+      weight: hasDefinedWeights ? entry.weight : 1,
+    }));
+
+    const eligibleMons = weightedMons.filter(
+      (m) => !caughtSpecies.has(normalizeEvolutionKey(m.name))
     );
     const oddsColor = getOddsColor(eligibleMons.length);
     const isGuaranteed = eligibleMons.length === 1;
+    const totalEligibleWeight = eligibleMons.reduce((sum, mon) => sum + mon.weight, 0);
 
     return (
       <div
@@ -599,8 +649,8 @@ function renderEncounterMethods(entry, caughtSpecies) {
         </div>
 
         <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginBottom: 8 }}>
-          {mons.map((m, idx) => {
-            const eligible = m !== "No encounters" && !caughtSpecies.has(String(m).toLowerCase());
+          {visibleMons.map((m, idx) => {
+            const eligible = m !== "No encounters" && !caughtSpecies.has(normalizeEvolutionKey(m));
             return (
               <span
                 key={`${keyBase}-mon-${idx}`}
@@ -623,7 +673,7 @@ function renderEncounterMethods(entry, caughtSpecies) {
           <strong>{label} odds:</strong>{" "}
           {eligibleMons.length > 0
             ? eligibleMons
-                .map((m) => `${m} (${(100 / eligibleMons.length).toFixed(1)}%)`)
+                .map((m) => `${m.name} (${((m.weight / totalEligibleWeight) * 100).toFixed(1)}%)`)
                 .join(", ")
             : "All dupes / no eligible encounters"}
         </div>
@@ -645,8 +695,9 @@ function renderEncounterMethods(entry, caughtSpecies) {
       const cleanLabel = formatMethodLabel(prefix || "Encounters");
       const levelText = getNestedLevel(entry.methodLevels || {}, pathParts);
       const displayLabel = levelText ? `${cleanLabel} (${levelText})` : cleanLabel;
+      const rateMap = getNestedMeta(entry.methodRates || {}, pathParts);
       methodElements.push(
-        renderMethodCard(displayLabel, obj, `${entry.area}-${prefix || "encounters"}`)
+        renderMethodCard(displayLabel, obj, `${entry.area}-${prefix || "encounters"}`, rateMap)
       );
     } else if (typeof obj === "object" && obj !== null) {
       Object.entries(obj).forEach(([key, val]) => {
@@ -930,7 +981,7 @@ const groupedFilteredGraveyard = filteredGraveyard.reduce((acc, mon) => {
                 const caughtSpecies = getAllCaughtSpecies(step.idx);
                 const possibleMons = getAllAvailablePokemon(entry.pokemon);
                 const dupeMons = possibleMons.filter((m) =>
-                  caughtSpecies.has(m.toLowerCase())
+                  caughtSpecies.has(normalizeEvolutionKey(m))
                 );
                 const shinyMons = possibleMons.filter((m) => !dupeMons.includes(m));
                 return (
@@ -1006,7 +1057,7 @@ const groupedFilteredGraveyard = filteredGraveyard.reduce((acc, mon) => {
                           fontWeight: "bold",
                         }}
                       >
-                        Eligible after Dupes: {possibleMons.filter((m) => m !== "No encounters" && !caughtSpecies.has(m.toLowerCase())).length}
+                        Eligible after Dupes: {possibleMons.filter((m) => m !== "No encounters" && !caughtSpecies.has(normalizeEvolutionKey(m))).length}
                       </span>
                     </div>
                     {renderEncounterMethods(entry, caughtSpecies)}
@@ -1028,7 +1079,7 @@ const groupedFilteredGraveyard = filteredGraveyard.reduce((acc, mon) => {
                           {possibleMons
                             .filter(
                               (m) =>
-                                !caughtSpecies.has(m.toLowerCase()) ||
+                                !caughtSpecies.has(normalizeEvolutionKey(m)) ||
                                 entry.caughtPokemon === m
                             )
                             .map((m) => (
@@ -1237,6 +1288,29 @@ const groupedFilteredGraveyard = filteredGraveyard.reduce((acc, mon) => {
                                 </li>
                               ))}
                             </ul>
+                          </>
+                        )}
+                        {boss.trainerTeams && (
+                          <>
+                            {Object.entries(boss.trainerTeams).map(([trainerName, trainerTeam]) => (
+                              <div key={trainerName}>
+                                <div style={{ margin: "10px 0 2px 0" }}>
+                                  <b>{trainerName} Team:</b>
+                                </div>
+                                <ul style={{ marginTop: 2 }}>
+                                  {trainerTeam.map((mon, i) => (
+                                    <li key={trainerName + i}>
+                                      {mon.species} (Lv. {mon.level}
+                                      {mon.item ? `, @${mon.item}` : ""}
+                                      {mon.ability ? `, Ability: ${mon.ability}` : ""}
+                                      {mon.ivs ? `, IVs: ${mon.ivs}` : ""}
+                                      {mon.moves ? `, Moves: ${mon.moves.join(" / ")}` : ""}
+                                      )
+                                    </li>
+                                  ))}
+                                </ul>
+                              </div>
+                            ))}
                           </>
                         )}
                         {conditionalTeam && (

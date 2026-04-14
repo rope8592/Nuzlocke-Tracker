@@ -46,6 +46,24 @@ const defaultEncounters = [
     "methodLevels": {
       "grass": "Level 2-3",
       "secondPatchGrass": "Level 5"
+    },
+    "methodRates": {
+      "grass": {
+        "Bunnelby": 10,
+        "Fletchling": 10,
+        "Pidgey": 10,
+        "Zigzagoon": 10,
+        "Kricketot": 10,
+        "Poochyena": 10,
+        "Patrat": 10,
+        "Purrloin": 10,
+        "Weedle": 10,
+        "Bonsly": 5,
+        "Surskit": 5
+      },
+      "secondPatchGrass": {
+        "Torchic": 100
+      }
     }
   },
   {
@@ -68,6 +86,21 @@ const defaultEncounters = [
     },
     "methodLevels": {
       "grass": "Level 3-5"
+    },
+    "methodRates": {
+      "grass": {
+        "Wurmple": 10,
+        "Scatterbug": 10,
+        "Cottonee": 10,
+        "Petilil": 10,
+        "Shroomish": 10,
+        "Pansage": 10,
+        "Pansear": 10,
+        "Panpour": 10,
+        "Sewaddle": 10,
+        "Pikachu": 5,
+        "Slakoth": 5
+      }
     }
   },
   {
@@ -113,6 +146,40 @@ const defaultEncounters = [
       "goodRod": "Level 35",
       "superRod": "Level 45",
       "surf": "Level 32-35"
+    },
+    "methodRates": {
+      "grass": {
+        "Rattata": 10,
+        "Shinx": 10,
+        "Bidoof": 10,
+        "Caterpie": 10,
+        "Pidove": 10,
+        "Tympole": 10,
+        "Lillipup": 10,
+        "Hoothoot": 10,
+        "Jigglypuff": 10,
+        "Smoochum": 5,
+        "Zorua": 5
+      },
+      "oldRod": {
+        "Magikarp": 60,
+        "Corphish": 35,
+        "Goldeen": 5
+      },
+      "goodRod": {
+        "Goldeen": 60,
+        "Corphish": 40
+      },
+      "superRod": {
+        "Gyarados": 60,
+        "Seaking": 35,
+        "Crawdaunt": 5
+      },
+      "surf": {
+        "Masquerain": 50,
+        "Marill": 30,
+        "Azumarill": 20
+      }
     }
   },
   {
@@ -168,6 +235,49 @@ const defaultEncounters = [
       "goodRod": "Level 35",
       "superRod": "Level 45",
       "surf": "Level 40-42"
+    },
+    "methodRates": {
+      "grass": {
+        "Spearow": 10,
+        "Mankey": 10,
+        "Litleo": 10,
+        "Starly": 10,
+        "Psyduck": 10,
+        "Lotad": 10,
+        "Seedot": 10,
+        "Azurill": 10,
+        "Farfetch’d": 10,
+        "Dunsparce": 5,
+        "Riolu": 5
+      },
+      "yellowFlowers": {
+        "Bibarel": 20,
+        "Golduck": 20,
+        "Azumarill": 20,
+        "Pyroar": 10,
+        "Diggersby": 10,
+        "Farfetch’d": 10,
+        "Dunsparce": 5,
+        "Lucario": 4,
+        "Deoxys": 1
+      },
+      "oldRod": {
+        "Magikarp": 60,
+        "Carvanha": 40
+      },
+      "goodRod": {
+        "Goldeen": 60,
+        "Carvanha": 40
+      },
+      "superRod": {
+        "Gyarados": 60,
+        "Seaking": 35,
+        "Sharpedo": 5
+      },
+      "surf": {
+        "Psyduck": 95,
+        "Azumarill": 5
+      }
     }
   },
   {
@@ -201,6 +311,31 @@ const defaultEncounters = [
     "methodLevels": {
       "yellowFlowers": "Level 11-13",
       "redFlowers": "Level 11-13"
+    },
+    "methodRates": {
+      "yellowFlowers": {
+        "Flabébé (Yellow)": 20,
+        "Sunkern": 10,
+        "Togepi": 10,
+        "Combee": 20,
+        "Munna": 10,
+        "Skitty": 10,
+        "Ralts": 15,
+        "Flabébé (Blue)": 4,
+        "Flabébé (White)": 1
+      },
+      "redFlowers": {
+        "Flabébé (Red)": 20,
+        "Natu": 10,
+        "Buneary": 10,
+        "Spinda": 10,
+        "Ledyba": 10,
+        "Budew": 15,
+        "Happiny": 10,
+        "Glammeow": 10,
+        "Flabébé (Orange)": 4,
+        "Flabébé (Green)": 1
+      }
     }
   },
   {
@@ -270,6 +405,38 @@ const defaultEncounters = [
     "methodLevels": {
       "grass": "Level 14-16",
       "purpleFlowers": "Level 14-16"
+    },
+    "methodRates": {
+      "grass": {
+        "Meowth": 10,
+        "Blitzle": 10,
+        "Skiddo": 20,
+        "Furfrou": 20,
+        "Pancham": 10,
+        "Doduo": 10,
+        "Phanpy": 10,
+        "Abra": 5,
+        "Plusle": 4,
+        "Minun": 1
+      },
+      "purpleFlowers": {
+        "Gulpin": 20,
+        "Pancham": 20,
+        "Skiddo": 10,
+        "Blitzle": 10,
+        "Elekid": 10,
+        "Magby": 10,
+        "Doduo": 10,
+        "Abra": 5,
+        "Minun": 4,
+        "Plusle": 1
+      },
+      "horde": {
+        "Cyndaquil": 60,
+        "Scraggy": 35,
+        "Plusle": 2.5,
+        "Minun": 2.5
+      }
     }
   },
   {
@@ -295,6 +462,20 @@ const defaultEncounters = [
     },
     "methodLevels": {
       "tallGrass": "Level 17-19"
+    },
+    "methodRates": {
+      "tallGrass": {
+        "Espurr": 15,
+        "Oddish": 10,
+        "Aipom": 10,
+        "Tangela": 10,
+        "Sentret": 10,
+        "Venonat": 10,
+        "Nincada": 10,
+        "Ekans": 10,
+        "Honedge": 10,
+        "Kecleon": 5
+      }
     }
   },
   {
@@ -321,6 +502,23 @@ const defaultEncounters = [
       "oldRod": "Level 19-24",
       "goodRod": "Level 35",
       "superRod": "Level 45"
+    },
+    "methodRates": {
+      "oldRod": {
+        "Feebas": 60,
+        "Dratini": 35,
+        "Magikarp": 5
+      },
+      "goodRod": {
+        "Feebas": 60,
+        "Corphish": 35,
+        "Dragonair": 5
+      },
+      "superRod": {
+        "Gyarados": 60,
+        "Crawdaunt": 35,
+        "Milotic": 5
+      }
     }
   },
   {
@@ -362,12 +560,57 @@ const defaultEncounters = [
         "Turtwig",
         "Piplup",
         "Roselia"
+      ],
+      "sleepingSnorlax": [
+        "Snorlax"
       ]
     },
     "methodLevels": {
       "grass": "Level 19-21",
       "yellowFlowers": "Level 19-21",
-      "purpleFlowers": "Level 19-21"
+      "purpleFlowers": "Level 19-21",
+      "sleepingSnorlax": "Static"
+    },
+    "methodRates": {
+      "grass": {
+        "Croagunk": 20,
+        "Smeargle": 20,
+        "Buizel": 15,
+        "Hoppip": 10,
+        "Volbeat": 10,
+        "Illumise": 10,
+        "Ducklett": 10,
+        "Flabébé": 5
+      },
+      "yellowFlowers": {
+        "Shellos": 20,
+        "Swirlix": 20,
+        "Flabébé": 15,
+        "Volbeat": 10,
+        "Minccino": 10,
+        "Swablu": 10,
+        "Roselia": 10,
+        "Croagunk": 5
+      },
+      "purpleFlowers": {
+        "Shellos": 20,
+        "Spritzee": 20,
+        "Flabébé": 10,
+        "Minccino": 10,
+        "Illumise": 10,
+        "Ducklett": 10,
+        "Roselia": 10,
+        "Croagunk": 5,
+        "Munchlax": 5
+      },
+      "horde": {
+        "Turtwig": 60,
+        "Piplup": 35,
+        "Roselia": 5
+      },
+      "sleepingSnorlax": {
+        "Snorlax": 100
+      }
     }
   },
   {
@@ -392,6 +635,26 @@ const defaultEncounters = [
       "pinkBerryTree": [
         "Spewpa"
       ]
+    },
+    "methodRates": {
+      "redBerryTree": {
+        "Ledyba": 100
+      },
+      "blueBerryTree": {
+        "Volbeat": 100
+      },
+      "purpleBerryTree": {
+        "Illumise": 100
+      },
+      "greenBerryTree": {
+        "Burmy": 100
+      },
+      "yellowBerryTree": {
+        "Combee": 100
+      },
+      "pinkBerryTree": {
+        "Spewpa": 100
+      }
     }
   },
   {
@@ -416,6 +679,23 @@ const defaultEncounters = [
     },
     "methodLevels": {
       "cave": "Level 18-20"
+    },
+    "methodRates": {
+      "cave": {
+        "Zubat": 20,
+        "Meditite": 20,
+        "Whismur": 10,
+        "Teddiursa": 10,
+        "Lickitung": 10,
+        "Aron": 10,
+        "Axew": 10,
+        "Larvitar": 10
+      },
+      "horde": {
+        "Charmander": 60,
+        "Drilbur": 35,
+        "Axew": 5
+      }
     }
   },
   {
@@ -480,6 +760,57 @@ const defaultEncounters = [
       "goodRod": "Level 35",
       "superRod": "Level 45",
       "surf": "Level 32-34"
+    },
+    "methodRates": {
+      "grass": {
+        "Drifloon": 20,
+        "Spoink": 20,
+        "Inkay": 15,
+        "Taillow": 10,
+        "Absol": 10,
+        "Sneasel": 10,
+        "Seviper": 10,
+        "Bagon": 5
+      },
+      "yellowFlowers": {
+        "Mienfoo": 20,
+        "Absol": 20,
+        "Inkay": 15,
+        "Taillow": 10,
+        "Spoink": 10,
+        "Gligar": 10,
+        "Zangoose": 10,
+        "Skarmory": 5
+      },
+      "rockSmash": {
+        "Dwebble": 50,
+        "Binacle": 50
+      },
+      "oldRod": {
+        "Clauncher": 60,
+        "Skrelp": 40
+      },
+      "goodRod": {
+        "Skrelp": 60,
+        "Clauncher": 40
+      },
+      "superRod": {
+        "Qwilfish": 60,
+        "Clawitzer": 35,
+        "Dragalge": 5
+      },
+      "surf": {
+        "Frillish": 50,
+        "Wailmer": 31,
+        "Tentacool": 19
+      },
+      "horde": {
+        "Chimchar": 60,
+        "Zangoose": 17.5,
+        "Seviper": 17.5,
+        "Rufflet": 2.5,
+        "Vullaby": 2.5
+      }
     }
   },
   {
@@ -514,6 +845,29 @@ const defaultEncounters = [
       "goodRod": "Level 35",
       "superRod": "Level 45",
       "surf": "Level 32-34"
+    },
+    "methodRates": {
+      "rockSmash": {
+        "Dwebble": 66,
+        "Binacle": 34
+      },
+      "oldRod": {
+        "Luvdisc": 95,
+        "Relicanth": 5
+      },
+      "goodRod": {
+        "Horsea": 60,
+        "Relicanth": 40
+      },
+      "superRod": {
+        "Relicanth": 60,
+        "Clawitzer": 35,
+        "Seadra": 5
+      },
+      "surf": {
+        "Tentacool": 69,
+        "Wailmer": 31
+      }
     }
   },
   {
@@ -563,6 +917,24 @@ const defaultEncounters = [
     "methodLevels": {
       "cave": "Level 22-24",
       "rockSmash": "Level 23-25"
+    },
+    "methodRates": {
+      "cave": {
+        "Machop": 15,
+        "Paras": 10,
+        "Rhyhorn": 10,
+        "Kangaskhan": 10,
+        "Cubone": 10,
+        "Spinarak": 10,
+        "Solrock": 10,
+        "Lunatone": 10,
+        "Mawile": 10,
+        "Druddigon": 5
+      },
+      "rockSmash": {
+        "Dwebble": 65,
+        "Onix": 35
+      }
     }
   },
   {
@@ -600,6 +972,32 @@ const defaultEncounters = [
       "goodRod": "Level 35",
       "superRod": "Level 45",
       "surf": "Level 32-34"
+    },
+    "methodRates": {
+      "rockSmash": {
+        "Krabby": 50,
+        "Onix": 35,
+        "Dwebble": 15
+      },
+      "oldRod": {
+        "Staryu": 60,
+        "Shellder": 40
+      },
+      "goodRod": {
+        "Horsea": 60,
+        "Finneon": 35,
+        "Relicanth": 5
+      },
+      "superRod": {
+        "Relicanth": 60,
+        "Clawitzer": 35,
+        "Seadra": 5
+      },
+      "surf": {
+        "Tentacool": 50,
+        "Wailmer": 35,
+        "Wingull": 15
+      }
     }
   },
   {

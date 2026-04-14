@@ -157,8 +157,7 @@ const bosses = [
       moves: ["Tackle", "Tail Whip", "Water Gun", "Withdraw"]
     }
   ],
-  storyBefore: "Route 4 (Parterre Way)",
-  storyAfter: "Lumiose City"
+  storyAfter: "Route 4 (Parterre Way)"
 },
 
   // 4. Tierno - Route 5
@@ -184,19 +183,11 @@ const bosses = [
         moves: ["Swords Dance", "Ice Punch", "Fake Out", "Fire Punch"]
       },
       {
-        species: "Lilligant",
+        species: "Petilil",
         level: 18,
         ability: "Own Tempo",
         IVs: 31,
         moves: ["Sleep Powder", "Leech Seed", "Mega Drain", "Synthesis"]
-      },
-      {
-        species: "Farfetch’d",
-        level: 18,
-        ability: "Super Luck",
-        item: "Stick",
-        IVs: 31,
-        moves: ["Swords Dance", "Aerial Ace", "Knock Off", "Fury Cutter"]
       }
     ],
     storyBefore: "Route 5 (Versant Road)",
@@ -209,6 +200,39 @@ const bosses = [
     location: "Route 7",
     sprite: "tierno-trevor.png",
     levelCap: 26,
+    team: [
+      {
+        species: "Pikachu",
+        level: 25,
+        ability: "Lightning Rod",
+        moves: ["Thunder Wave", "Quick Attack", "Electro Ball"]
+      },
+      {
+        species: "Breloom",
+        level: 25,
+        moves: ["Mach Punch"]
+      },
+      {
+        species: "Floette",
+        level: 25,
+        moves: ["Protect"]
+      },
+      {
+        species: "Corphish",
+        level: 25,
+        moves: ["Aqua Jet", "Protect", "Swords Dance", "Knock Off"]
+      },
+      {
+        species: "Lombre",
+        level: 25,
+        moves: ["Fake Out", "Ice Punch", "Fire Punch", "Swords Dance"]
+      },
+      {
+        species: "Petilil",
+        level: 25,
+        moves: ["Magical Leaf", "Synthesis"]
+      }
+    ],
     conditionalTeams: {
       // ALL Calem/Serena combos for the player's starter:
       "Chespin_Serena": [
