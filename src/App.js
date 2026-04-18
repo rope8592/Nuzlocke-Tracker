@@ -200,6 +200,45 @@ function App() {
     URL.revokeObjectURL(url);
   };
 
+  const importRunData = (event) => {
+    const file = event.target.files && event.target.files[0];
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.onload = (loadEvent) => {
+      try {
+        const parsed = JSON.parse(loadEvent.target.result);
+
+        if (!parsed || typeof parsed !== "object") {
+          throw new Error("Invalid backup file.");
+        }
+
+        if (parsed.storage && typeof parsed.storage === "object") {
+          Object.entries(parsed.storage).forEach(([key, value]) => {
+            localStorage.setItem(key, value);
+          });
+        } else {
+          if (parsed.starter !== undefined) localStorage.setItem("nuzlocke-starter", parsed.starter);
+          if (parsed.player !== undefined) localStorage.setItem("nuzlocke-player", parsed.player);
+          if (parsed.encounters !== undefined) localStorage.setItem("nuzlocke-encounters", JSON.stringify(parsed.encounters));
+          if (parsed.party !== undefined) localStorage.setItem("nuzlocke-party", JSON.stringify(parsed.party));
+          if (parsed.box !== undefined) localStorage.setItem("nuzlocke-box", JSON.stringify(parsed.box));
+          if (parsed.defeatedBosses !== undefined) localStorage.setItem("nuzlocke-defeated-bosses", JSON.stringify(parsed.defeatedBosses));
+        }
+
+        window.alert("Run imported successfully. The app will reload now.");
+        window.location.reload();
+      } catch (error) {
+        console.error("Import failed:", error);
+        window.alert("Import failed. Please choose a valid backup JSON file.");
+      } finally {
+        event.target.value = "";
+      }
+    };
+
+    reader.readAsText(file);
+  };
+
 
   const [encounters, setEncounters] = useState(() => {
     const saved = localStorage.getItem("nuzlocke-encounters");
@@ -921,6 +960,32 @@ const groupedFilteredGraveyard = filteredGraveyard.reduce((acc, mon) => {
         >
           Export Run
         </button>
+        <label
+          style={{
+            display: "inline-flex",
+            alignItems: "center",
+            cursor: "pointer",
+          }}
+        >
+          <input
+            type="file"
+            accept="application/json,.json"
+            onChange={importRunData}
+            style={{ display: "none" }}
+          />
+          <span
+            style={{
+              display: "inline-block",
+              padding: "2px 6px",
+              border: "1px solid #999",
+              borderRadius: 4,
+              background: "#f3f4f6",
+              color: "#111827",
+            }}
+          >
+            Import Run
+          </span>
+        </label>
       </div>
 
       {activeTab === "game" && (
