@@ -887,6 +887,18 @@ const defaultEncounters = [
     },
     "methodLevels": {
       "roughTerrain": "Level 21-23"
+    },
+    "methodRates": {
+      "roughTerrain": {
+        "Sandile": 20,
+        "Hippopotas": 20,
+        "Helioptile": 15,
+        "Maractus": 10,
+        "Cacnea": 10,
+        "Torkoal": 10,
+        "Numel": 10,
+        "Larvesta": 5
+      }
     }
   },
   {
@@ -941,6 +953,21 @@ const defaultEncounters = [
     "area": "Cyllage City",
     "status": "Available",
     "pokemon": {
+      "glitteringCaveGuaranteedFossils": [
+        "Tyrunt",
+        "Amaura"
+      ],
+      "heldItemFossils": [
+        "Omanyte",
+        "Kabuto",
+        "Aerodactyl",
+        "Lileep",
+        "Anorith",
+        "Cranidos",
+        "Shieldon",
+        "Tirtouga",
+        "Archen"
+      ],
       "rockSmash": [
         "Krabby",
         "Onix",
@@ -967,6 +994,8 @@ const defaultEncounters = [
       ]
     },
     "methodLevels": {
+      "glitteringCaveGuaranteedFossils": "Revive",
+      "heldItemFossils": "Revive",
       "rockSmash": "Level 24-26",
       "oldRod": "Level 26",
       "goodRod": "Level 35",
@@ -974,6 +1003,21 @@ const defaultEncounters = [
       "surf": "Level 32-34"
     },
     "methodRates": {
+      "glitteringCaveGuaranteedFossils": {
+        "Tyrunt": 100,
+        "Amaura": 100
+      },
+      "heldItemFossils": {
+        "Omanyte": 100,
+        "Kabuto": 100,
+        "Aerodactyl": 100,
+        "Lileep": 100,
+        "Anorith": 100,
+        "Cranidos": 100,
+        "Shieldon": 100,
+        "Tirtouga": 100,
+        "Archen": 100
+      },
       "rockSmash": {
         "Krabby": 50,
         "Onix": 35,
@@ -1032,6 +1076,32 @@ const defaultEncounters = [
     "methodLevels": {
       "grass": "Level 24-26",
       "yellowFlowers": "Level 24-26"
+    },
+    "methodRates": {
+      "grass": {
+        "Hawlucha": 20,
+        "Golett": 10,
+        "Baltoy": 10,
+        "Growlithe": 10,
+        "Vulpix": 10,
+        "Sigilyph": 10,
+        "Nosepass": 10,
+        "Elgyem": 10,
+        "Emolga": 10
+      },
+      "yellowFlowers": {
+        "Electrike": 20,
+        "Houndour": 20,
+        "Eevee": 20,
+        "Yanma": 20,
+        "Snubbull": 10,
+        "Darumaka": 10
+      },
+      "horde": {
+        "Tepig": 60,
+        "Snivy": 35,
+        "Tyrogue": 5
+      }
     }
   },
   {
@@ -1060,6 +1130,27 @@ const defaultEncounters = [
     },
     "methodLevels": {
       "grass": "Level 26-28"
+    },
+    "methodRates": {
+      "grass": {
+        "Hariyama": 10,
+        "Joltik": 10,
+        "Sawk": 10,
+        "Throh": 10,
+        "Staravia": 10,
+        "Cherubi": 10,
+        "Drowzee": 10,
+        "Stunky": 10,
+        "Nidorino": 10,
+        "Nidorina": 5,
+        "Dedenne": 5
+      },
+      "horde": {
+        "Torchic": 60,
+        "Nidoran♂": 17.5,
+        "Nidoran♀": 17.5,
+        "Timburr": 5
+      }
     }
   },
   {
@@ -1156,6 +1247,80 @@ const defaultEncounters = [
       "B2F - Alakazite Room": {
         "cave": "Level 29-31"
       }
+    },
+    "methodRates": {
+      "1F": {
+        "cave": {
+          "Mr. Mime": 20,
+          "Solosis": 20,
+          "Roggenrola": 20,
+          "Chingling": 15,
+          "Carbink": 10,
+          "Wobbuffet": 10,
+          "Sableye": 10
+        },
+        "horde": {
+          "Mime Jr.": 60,
+          "Clefairy": 35,
+          "Roggenrola": 2.5,
+          "Carbink": 2.5
+        }
+      },
+      "B1F": {
+        "cave": {
+          "Gastly": 20,
+          "Klink": 20,
+          "Misdreavus": 20,
+          "Solosis": 10,
+          "Roggenrola": 10,
+          "Wobbuffet": 10,
+          "Sableye": 4,
+          "Meloetta": 1
+        },
+        "horde": {
+          "Mime Jr.": 60,
+          "Clefairy": 35,
+          "Roggenrola": 2.5,
+          "Carbink": 2.5
+        }
+      },
+      "B2F": {
+        "cave": {
+          "Mr. Mime": 20,
+          "Bronzor": 20,
+          "Solosis": 10,
+          "Roggenrola": 10,
+          "Carbink": 10,
+          "Chingling": 20,
+          "Wobbuffet": 10,
+          "Sableye": 4,
+          "Diancie": 1
+        },
+        "horde": {
+          "Tynamo": 60,
+          "Clefairy": 35,
+          "Roggenrola": 2.5,
+          "Carbink": 2.5
+        }
+      },
+      "B2F - Alakazite Room": {
+        "cave": {
+          "Gothita": 20,
+          "Noibat": 15,
+          "Mr. Mime": 10,
+          "Roggenrola": 10,
+          "Sableye": 20,
+          "Carbink": 10,
+          "Wobbuffet": 10,
+          "Beldum": 5
+        },
+        "horde": {
+          "Tynamo": 60,
+          "Clefairy": 35,
+          "Roggenrola": 2.5,
+          "Carbink": 2.5
+        }
+      }
     }
   },
   {
@@ -1186,6 +1351,26 @@ const defaultEncounters = [
       "goodRod": "Level 35",
       "superRod": "Level 45",
       "surf": "Level 32-34"
+    },
+    "methodRates": {
+      "oldRod": {
+        "Shellder": 60,
+        "Staryu": 40
+      },
+      "goodRod": {
+        "Remoraid": 60,
+        "Chinchou": 40
+      },
+      "superRod": {
+        "Alomomola": 60,
+        "Octillery": 35,
+        "Lanturn": 5
+      },
+      "surf": {
+        "Tentacool": 50,
+        "Frillish": 30,
+        "Mantyke": 20
+      }
     }
   },
   {
@@ -1261,6 +1446,56 @@ const defaultEncounters = [
       "goodRod": "Level 35",
       "superRod": "Level 45",
       "surf": "Level 30-32"
+    },
+    "methodRates": {
+      "grass": {
+        "Slowpoke": 20,
+        "Pachirisu": 20,
+        "Scyther": 10,
+        "Chatot": 10,
+        "Ponyta": 10,
+        "Miltank": 10,
+        "Tauros": 10,
+        "Exeggcute": 10
+      },
+      "yellowFlowers": {
+        "Tauros": 20,
+        "Miltank": 20,
+        "Pinsir": 15,
+        "Heracross": 15,
+        "Chatot": 10,
+        "Slowpoke": 10,
+        "Exeggcute": 10
+      },
+      "rockSmash": {
+        "Dwebble": 50,
+        "Binacle": 50
+      },
+      "oldRod": {
+        "Remoraid": 60,
+        "Clamperl": 40
+      },
+      "goodRod": {
+        "Remoraid": 60,
+        "Clamperl": 40
+      },
+      "superRod": {
+        "Corsola": 60,
+        "Octillery": 35,
+        "Huntail": 5
+      },
+      "surf": {
+        "Tentacool": 50,
+        "Frillish": 30,
+        "Mantyke": 15,
+        "Lapras": 5
+      },
+      "horde": {
+        "Mareep": 60,
+        "Chikorita": 35,
+        "Tauros": 2.5,
+        "Miltank": 2.5
+      }
     }
   },
   {
@@ -1314,6 +1549,48 @@ const defaultEncounters = [
       "goodRod": "Level 35",
       "superRod": "Level 45",
       "surf": "Level 30-33"
+    },
+    "methodRates": {
+      "grass": {
+        "Chatot": 20,
+        "Slowpoke": 10,
+        "Inkay": 15,
+        "Exeggcute": 15,
+        "Gastrodon": 20,
+        "Spheal": 10,
+        "Seel": 10
+      },
+      "rockSmash": {
+        "Dwebble": 50,
+        "Binacle": 30,
+        "Krabby": 20
+      },
+      "oldRod": {
+        "Chinchou": 60,
+        "Finneon": 40
+      },
+      "goodRod": {
+        "Lumineon": 60,
+        "Lanturn": 35,
+        "Alomomola": 5
+      },
+      "superRod": {
+        "Alomomola": 60,
+        "Octillery": 35,
+        "Lanturn": 5
+      },
+      "surf": {
+        "Pelipper": 50,
+        "Frillish": 30,
+        "Mantyke": 15,
+        "Lapras": 4,
+        "Manaphy": 1
+      },
+      "horde": {
+        "Oshawott": 60,
+        "Slowpoke": 35,
+        "Exeggcute": 5
+      }
     }
   },
   {
@@ -1340,6 +1617,20 @@ const defaultEncounters = [
     },
     "methodLevels": {
       "roughTerrain": "Level 34-36"
+    },
+    "methodRates": {
+      "roughTerrain": {
+        "Dugtrio": 20,
+        "Sandslash": 20,
+        "Trapinch": 20,
+        "Gible": 20,
+        "Drilbur": 10,
+        "Durant": 10
+      },
+      "rockSmash": {
+        "Graveler": 66,
+        "Slugma": 34
+      }
     }
   },
   {
@@ -1400,6 +1691,54 @@ const defaultEncounters = [
       "goodRod": "Level 42",
       "superRod": "Level 45",
       "surf": "Level 43-45"
+    },
+    "methodRates": {
+      "grass": {
+        "Skorupi": 10,
+        "Arbok": 10,
+        "Weepinbell": 10,
+        "Pineco": 10,
+        "Quagsire": 10,
+        "Weezing": 10,
+        "Karrablast": 10,
+        "Shelmet": 10,
+        "Carnivine": 10,
+        "Haunter": 5,
+        "Misdreavus": 5
+      },
+      "shallowWater": {
+        "Quagsire": 20,
+        "Goomy": 20,
+        "Stunfisk": 20,
+        "Muk": 10,
+        "Karrablast": 10,
+        "Shelmet": 10,
+        "Haunter": 10
+      },
+      "oldRod": {
+        "Poliwag": 60,
+        "Barboach": 40
+      },
+      "goodRod": {
+        "Barboach": 60,
+        "Poliwhirl": 35,
+        "Whiscash": 5
+      },
+      "superRod": {
+        "Poliwhirl": 60,
+        "Whiscash": 35,
+        "Poliwrath": 5
+      },
+      "surf": {
+        "Quagsire": 50,
+        "Stunfisk": 35,
+        "Goomy": 15
+      },
+      "horde": {
+        "Totodile": 60,
+        "Mudkip": 35,
+        "Goomy": 5
+      }
     }
   },
   {
@@ -1423,6 +1762,20 @@ const defaultEncounters = [
       "oldRod": "Level 30",
       "goodRod": "Level 35",
       "superRod": "Level 50"
+    },
+    "methodRates": {
+      "oldRod": {
+        "Poliwag": 100
+      },
+      "goodRod": {
+        "Basculin": 65,
+        "Poliwhirl": 35
+      },
+      "superRod": {
+        "Poliwhirl": 60,
+        "Basculin": 35,
+        "Poliwrath": 5
+      }
     }
   },
   {
@@ -1481,6 +1834,52 @@ const defaultEncounters = [
       "goodRod": "Level 40",
       "superRod": "Level 45",
       "surf": "Level 44-46"
+    },
+    "methodRates": {
+      "grass": {
+        "Mightyena": 10,
+        "Liepard": 10,
+        "Castform": 10,
+        "Stantler": 10,
+        "Deerling": 10,
+        "Pawniard": 10,
+        "Watchog": 10,
+        "Foongus": 10,
+        "Girafarig": 10,
+        "Klefki": 10
+      },
+      "redFlowers": {
+        "Pawniard": 20,
+        "Watchog": 10,
+        "Liepard": 10,
+        "Deino": 10,
+        "Skorupi": 10,
+        "Mightyena": 10,
+        "Duskull": 10,
+        "Shuppet": 10,
+        "Klefki": 10
+      },
+      "oldRod": {
+        "Poliwag": 100
+      },
+      "goodRod": {
+        "Basculin": 65,
+        "Poliwhirl": 35
+      },
+      "superRod": {
+        "Poliwhirl": 60,
+        "Basculin": 35,
+        "Politoed": 5
+      },
+      "surf": {
+        "Lombre": 66,
+        "Floatzel": 34
+      },
+      "horde": {
+        "Murkrow": 60,
+        "Treecko": 35,
+        "Porygon": 5
+      }
     }
   },
   {
@@ -1506,6 +1905,17 @@ const defaultEncounters = [
     },
     "methodLevels": {
       "building": "Level 46-48"
+    },
+    "methodRates": {
+      "building": {
+        "Magneton": 20,
+        "Yamask": 20,
+        "Litwick": 20,
+        "Electrode": 20,
+        "Spiritomb": 10,
+        "Klefki": 9,
+        "Hoopa": 1
+      }
     }
   },
   {
@@ -1558,6 +1968,46 @@ const defaultEncounters = [
       "goodRod": "Level 40",
       "superRod": "Level 45",
       "surf": "Level 45-47"
+    },
+    "methodRates": {
+      "yellowFlowers": {
+        "Skorupi": 20,
+        "Phantump": 20,
+        "Weepinbell": 10,
+        "Bouffalant": 20,
+        "Floatzel": 10,
+        "Sunflora": 10,
+        "Klefki": 10
+      },
+      "tallGrass": {
+        "Pumpkaboo": 41,
+        "Misdreavus": 20,
+        "Foongus": 20,
+        "Tropius": 10,
+        "Klefki": 9
+      },
+      "oldRod": {
+        "Poliwag": 100
+      },
+      "goodRod": {
+        "Basculin": 65,
+        "Poliwhirl": 35
+      },
+      "superRod": {
+        "Poliwhirl": 60,
+        "Basculin": 40
+      },
+      "surf": {
+        "Lombre": 50,
+        "Floatzel": 30,
+        "Palpitoad": 19,
+        "Seismitoad": 1
+      },
+      "horde": {
+        "Squirtle": 60,
+        "Bulbasaur": 35,
+        "Tropius": 5
+      }
     }
   },
   {
@@ -1669,6 +2119,92 @@ const defaultEncounters = [
       "3F & Ice Rock Room": {
         "cave": "Level 50-52"
       }
+    },
+    "methodRates": {
+      "outside": {
+        "oldRod": {
+          "Poliwag": 100
+        },
+        "goodRod": {
+          "Basculin": 65,
+          "Poliwhirl": 35
+        },
+        "superRod": {
+          "Poliwhirl": 65,
+          "Basculin": 35
+        },
+        "surf": {
+          "Dewgong": 50,
+          "Floatzel": 49,
+          "Poliwrath": 1
+        }
+      },
+      "1F": {
+        "cave": {
+          "Piloswine": 20,
+          "Bergmite": 20,
+          "Beartic": 20,
+          "Jynx": 20,
+          "Haunter": 15,
+          "Cryogonal": 5
+        },
+        "horde": {
+          "Vanillite": 60,
+          "Cubchoo": 35,
+          "Smoochum": 5
+        }
+      },
+      "2F": {
+        "cave": {
+          "Piloswine": 20,
+          "Bergmite": 20,
+          "Sealeo": 20,
+          "Beartic": 10,
+          "Jynx": 10,
+          "Haunter": 15,
+          "Cryogonal": 5
+        },
+        "oldRod": {
+          "Seel": 60,
+          "Poliwag": 40
+        },
+        "goodRod": {
+          "Basculin": 65,
+          "Seel": 35
+        },
+        "superRod": {
+          "Dewgong": 60,
+          "Basculin": 35,
+          "Poliwhirl": 5
+        },
+        "surf": {
+          "Seel": 50,
+          "Sealeo": 30,
+          "Poliwhirl": 16,
+          "Floatzel": 4
+        },
+        "horde": {
+          "Vanillite": 60,
+          "Cubchoo": 35,
+          "Smoochum": 5
+        }
+      },
+      "3F & Ice Rock Room": {
+        "cave": {
+          "Piloswine": 20,
+          "Bergmite": 20,
+          "Beartic": 20,
+          "Jynx": 20,
+          "Haunter": 15,
+          "Cryogonal": 4,
+          "Kyurem": 1
+        },
+        "horde": {
+          "Snorunt": 60,
+          "Cubchoo": 35,
+          "Smoochum": 5
+        }
+      }
     }
   },
   {
@@ -1684,6 +2220,14 @@ const defaultEncounters = [
     },
     "methodLevels": {
       "snow": "Level 54-56"
+    },
+    "methodRates": {
+      "snow": {
+        "Snover": 30,
+        "Delibird": 30,
+        "Sneasel": 30,
+        "Abomasnow": 10
+      }
     }
   },
   {
@@ -1741,6 +2285,38 @@ const defaultEncounters = [
       "grass": "Level 60-62",
       "redFlowers": "Level 60-62",
       "rockSmash": "Level 60-62"
+    },
+    "methodRates": {
+      "grass": {
+        "Gurdurr": 20,
+        "Torkoal": 20,
+        "Larvesta": 10,
+        "Sandslash": 10,
+        "Lairon": 10,
+        "Durant": 10,
+        "Pupitar": 10,
+        "Graveler": 5,
+        "Heatmor": 5
+      },
+      "redFlowers": {
+        "Lairon": 20,
+        "Sandslash": 20,
+        "Pupitar": 10,
+        "Torkoal": 10,
+        "Gurdurr": 10,
+        "Durant": 10,
+        "Graveler": 10,
+        "Heatmor": 10
+      },
+      "rockSmash": {
+        "Graveler": 80,
+        "Shuckle": 20
+      },
+      "horde": {
+        "Fennekin": 60,
+        "Durant": 37.5,
+        "Heatmor": 2.5
+      }
     }
   },
   {
@@ -1839,6 +2415,76 @@ const defaultEncounters = [
       "Small Room, 1F (accessible from Route 18)": {
         "cave": "Level 61-63"
       }
+    },
+    "methodRates": {
+      "allAreas": {
+        "cave": {
+          "Lairon": 20,
+          "Sandslash": 20,
+          "Pupitar": 20,
+          "Durant": 20,
+          "Graveler": 19
+        },
+        "rockSmash": {
+          "Graveler": 80,
+          "Shuckle": 20
+        }
+      },
+      "1F": {
+        "cave": {
+          "Genesect": 1
+        },
+        "horde": {
+          "Durant": 60,
+          "Aron": 35,
+          "Unown": 5
+        }
+      },
+      "B1F (Both Rooms)": {
+        "cave": {
+          "Volcanion": 1
+        },
+        "horde": {
+          "Durant": 60,
+          "Larvitar": 35,
+          "Unown": 5
+        }
+      },
+      "B2F": {
+        "cave": {
+          "Heatran": 1
+        },
+        "horde": {
+          "Durant": 60,
+          "Sandshrew": 35,
+          "Unown": 5
+        }
+      },
+      "Small Room, B1F (accessible from Route 18)": {
+        "cave": {
+          "Regigigas": 1
+        },
+        "horde": {
+          "Durant": 60,
+          "Excadrill": 35,
+          "Unown": 5
+        }
+      },
+      "Small Room, 1F (accessible from Route 18)": {
+        "cave": {
+          "Lairon": 20,
+          "Sandslash": 20,
+          "Pupitar": 20,
+          "Durant": 20,
+          "Graveler": 10,
+          "Unown": 10
+        },
+        "horde": {
+          "Durant": 60,
+          "Geodude": 35,
+          "Unown": 5
+        }
+      }
     }
   },
   {
@@ -1866,6 +2512,23 @@ const defaultEncounters = [
       "goodRod": "Level 35",
       "superRod": "Level 45",
       "surf": "Level 44-46"
+    },
+    "methodRates": {
+      "oldRod": {
+        "Poliwag": 100
+      },
+      "goodRod": {
+        "Basculin": 65,
+        "Poliwhirl": 35
+      },
+      "superRod": {
+        "Poliwhirl": 65,
+        "Basculin": 35
+      },
+      "surf": {
+        "Lombre": 66,
+        "Floatzel": 34
+      }
     }
   },
   {
@@ -1935,6 +2598,62 @@ const defaultEncounters = [
       "goodRod": "Level 55",
       "superRod": "Level 65",
       "surf": "Level 62-64"
+    },
+    "methodRates": {
+      "yellowFlowers": {
+        "Quagsire": 30,
+        "Sliggoo": 20,
+        "Weepinbell": 10,
+        "Drapion": 10,
+        "Karrablast": 10,
+        "Shelmet": 10,
+        "Haunter": 5,
+        "Carnivine": 4,
+        "Latias": 1
+      },
+      "purpleFlowers": {
+        "Drapion": 30,
+        "Weepinbell": 20,
+        "Sliggoo": 10,
+        "Quagsire": 10,
+        "Karrablast": 10,
+        "Shelmet": 10,
+        "Haunter": 5,
+        "Carnivine": 4,
+        "Latios": 1
+      },
+      "shallowWater": {
+        "Palpitoad": 30,
+        "Sliggoo": 20,
+        "Stunfisk": 20,
+        "Karrablast": 10,
+        "Shelmet": 10,
+        "Haunter": 5,
+        "Carnivine": 4,
+        "Keldeo": 1
+      },
+      "oldRod": {
+        "Goomy": 100
+      },
+      "goodRod": {
+        "Barboach": 65,
+        "Poliwhirl": 35
+      },
+      "superRod": {
+        "Poliwhirl": 60,
+        "Whiscash": 35,
+        "Politoed": 5
+      },
+      "surf": {
+        "Quagsire": 50,
+        "Stunfisk": 34,
+        "Sliggoo": 16
+      },
+      "horde": {
+        "Weepinbell": 60,
+        "Gligar": 35,
+        "Arbok": 5
+      }
     }
   },
   {
@@ -1967,6 +2686,30 @@ const defaultEncounters = [
     "methodLevels": {
       "grass": "Level 64-66",
       "redFlowers": "Level 64-66"
+    },
+    "methodRates": {
+      "grass": {
+        "Noctowl": 20,
+        "Amoonguss": 20,
+        "Jigglypuff": 20,
+        "Misdreavus": 15,
+        "Trevenant": 10,
+        "Gothorita": 10,
+        "Zoroark": 5
+      },
+      "redFlowers": {
+        "Amoonguss": 25,
+        "Gothorita": 20,
+        "Trevenant": 20,
+        "Zoroark": 15,
+        "Jigglypuff": 10,
+        "Noctowl": 10
+      },
+      "horde": {
+        "Chespin": 60,
+        "Trevenant": 37.5,
+        "Sudowoodo": 2.5
+      }
     }
   },
   {
@@ -2037,6 +2780,58 @@ const defaultEncounters = [
       "goodRod": "Level 50",
       "superRod": "Level 65",
       "surf": "Level 64-66"
+    },
+    "methodRates": {
+      "yellowFlowers": {
+        "Ditto": 30,
+        "Raikou": 10,
+        "Suicune": 10,
+        "Entei": 10,
+        "Articuno": 10,
+        "Zapdos": 10,
+        "Moltres": 10,
+        "Celebi": 5,
+        "Mew": 4,
+        "Darkrai": 1
+      },
+      "purpleFlowers": {
+        "Regirock": 10,
+        "Regice": 10,
+        "Registeel": 10,
+        "Mesprit": 10,
+        "Azelf": 10,
+        "Uxie": 10,
+        "Cobalion": 10,
+        "Virizion": 10,
+        "Terrakion": 10,
+        "Shaymin": 5,
+        "Jirachi": 4,
+        "Cresselia": 1
+      },
+      "oldRod": {
+        "Poliwhirl": 95,
+        "Phione": 5
+      },
+      "goodRod": {
+        "Basculin": 65,
+        "Poliwhirl": 35
+      },
+      "superRod": {
+        "Poliwhirl": 60,
+        "Basculin": 35,
+        "Politoed": 5
+      },
+      "surf": {
+        "Lombre": 66,
+        "Poliwhirl": 34
+      },
+      "horde": {
+        "Froakie": 60,
+        "Ditto": 35,
+        "Thundurus": 1.6667,
+        "Landorus": 1.6667,
+        "Tornadus": 1.6666
+      }
     }
   },
   {
@@ -2091,6 +2886,48 @@ const defaultEncounters = [
       "goodRod": "Level 55",
       "superRod": "Level 65",
       "surf": "Level 65-67"
+    },
+    "methodRates": {
+      "purpleFlowers": {
+        "Floatzel": 20,
+        "Altaria": 20,
+        "Cherrim": 20,
+        "Spinda": 20,
+        "Ursaring": 10,
+        "Scyther": 9,
+        "Xerneas": 1
+      },
+      "redFlowers": {
+        "Ursaring": 20,
+        "Altaria": 20,
+        "Spinda": 20,
+        "Scyther": 19,
+        "Floatzel": 10,
+        "Cherrim": 10,
+        "Yveltal": 1
+      },
+      "oldRod": {
+        "Poliwag": 100
+      },
+      "goodRod": {
+        "Basculin": 60,
+        "Dratini": 35,
+        "Dragonair": 5
+      },
+      "superRod": {
+        "Dratini": 60,
+        "Dragonair": 35,
+        "Dragonite": 5
+      },
+      "surf": {
+        "Lombre": 50,
+        "Floatzel": 50
+      },
+      "horde": {
+        "Spinda": 60,
+        "Swablu": 35,
+        "Scyther": 5
+      }
     }
   },
   {
@@ -2267,6 +3104,141 @@ const defaultEncounters = [
         "goodRod": "Level 65",
         "superRod": "Level 75-76",
         "surf": "Level 70-72"
+      }
+    },
+    "methodRates": {
+      "1F": {
+        "cave": {
+          "Gurdurr": 20,
+          "Graveler": 20,
+          "Hariyama": 10,
+          "Druddigon": 20,
+          "Haunter": 10,
+          "Lickitung": 15,
+          "Zweilous": 5
+        },
+        "rockSmash": {
+          "Graveler": 95,
+          "Shuckle": 5
+        },
+        "oldRod": {
+          "Poliwag": 100
+        },
+        "goodRod": {
+          "Basculin": 60,
+          "Poliwhirl": 35,
+          "Whiscash": 5
+        },
+        "superRod": {
+          "Poliwhirl": 60,
+          "Basculin": 35,
+          "Whiscash": 5
+        },
+        "surf": {
+          "Poliwhirl": 65,
+          "Floatzel": 34,
+          "Poliwrath": 1
+        },
+        "horde": {
+          "Deino": 60,
+          "Floatzel": 35,
+          "Lugia": 2.5,
+          "Ho-Oh": 2.5
+        }
+      },
+      "2F": {
+        "cave": {
+          "Gurdurr": 20,
+          "Druddigon": 20,
+          "Graveler": 20,
+          "Lickitung": 15,
+          "Donphan": 10,
+          "Haunter": 10,
+          "Zweilous": 5
+        },
+        "rockSmash": {
+          "Graveler": 95,
+          "Shuckle": 5
+        },
+        "horde": {
+          "Phanpy": 60,
+          "Graveler": 35,
+          "Kyogre": 1.6667,
+          "Groudon": 1.6667,
+          "Rayquaza": 1.6666
+        }
+      },
+      "3F": {
+        "cave": {
+          "Gurdurr": 20,
+          "Druddigon": 20,
+          "Graveler": 20,
+          "Zweilous": 15,
+          "Lickitung": 15,
+          "Haunter": 10
+        },
+        "horde": {
+          "Gurdurr": 60,
+          "Lickitung": 35,
+          "Dialga": 1.6667,
+          "Palkia": 1.6667,
+          "Giratina": 1.6666
+        }
+      },
+      "Waterfall Area": {
+        "oldRod": {
+          "Poliwag": 100
+        },
+        "goodRod": {
+          "Basculin": 65,
+          "Poliwhirl": 35
+        },
+        "superRod": {
+          "Poliwhirl": 60,
+          "Basculin": 35,
+          "Poliwrath": 5
+        },
+        "surf": {
+          "Lombre": 65,
+          "Floatzel": 34,
+          "Ludicolo": 1
+        }
+      },
+      "Final Cave": {
+        "cave": {
+          "Gurdurr": 20,
+          "Graveler": 20,
+          "Druddigon": 20,
+          "Lickitung": 15,
+          "Gabite": 10,
+          "Haunter": 10,
+          "Zweilous": 4,
+          "Victini": 1
+        },
+        "oldRod": {
+          "Poliwag": 100
+        },
+        "goodRod": {
+          "Basculin": 65,
+          "Poliwhirl": 35
+        },
+        "superRod": {
+          "Poliwhirl": 60,
+          "Basculin": 35,
+          "Poliwrath": 5
+        },
+        "surf": {
+          "Poliwhirl": 65,
+          "Floatzel": 34,
+          "Poliwrath": 1
+        },
+        "horde": {
+          "Haunter": 60,
+          "Floatzel": 35,
+          "Reshiram": 1.6667,
+          "Zekrom": 1.6667,
+          "Arceus": 1.6666
+        }
       }
     }
   },

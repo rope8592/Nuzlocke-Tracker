@@ -447,22 +447,22 @@ const bosses = [
     levelCap: 32,
     team: [
       {
-        species: "Mienfoo",
-        level: 31,
-        ability: "Regenerator",
+        species: "Lucario",
+        level: 32,
+        ability: "Steadfast",
         IVs: 31,
-        moves: ["Fake Out", "U-turn", "Drain Punch", "Knock Off"]
+        moves: ["Swords Dance", "Power-Up Punch", "Bone Rush", "Metal Sound"]
       },
       {
-        species: "Hawlucha",
+        species: "Lucario",
         level: 32,
-        ability: "Unburden",
+        ability: "Inner Focus",
         IVs: 31,
-        moves: ["Flying Press", "Encore", "Acrobatics", "Swords Dance"]
+        moves: ["Swords Dance", "Power-Up Punch", "Bone Rush", "Metal Sound"]
       }
     ],
-    storyBefore: "Route 10 (Menhir Trail)",
-    storyAfter: "Route 11 (Miroir Way)"
+    storyBefore: "Route 11 (Miroir Way)",
+    storyAfter: "Route 10 (Menhir Trail)"
   },
   // 8. Tower of Mastery - Calem/Serena Rival (ALL starter/player combos)
   {
@@ -482,12 +482,12 @@ const bosses = [
           moves: ["Psyshock", "Charm", "Light Screen", "Reflect"]
         },
         {
-          species: "Kangaskhan",
+          species: "Absol",
           level: 35,
-          ability: "Scrappy",
-          item: "Chople Berry",
+          ability: "Super Luck",
+          item: "Scope Lens",
           IVs: 31,
-          moves: ["Dizzy Punch", "Fake Out", "Ice Punch", "Bulldoze"]
+          moves: ["Swords Dance", "Slash", "Double Team", "Bite"]
         },
         {
           species: "Dragonair",
@@ -524,12 +524,12 @@ const bosses = [
           moves: ["Psyshock", "Charm", "Light Screen", "Reflect"]
         },
         {
-          species: "Kangaskhan",
+          species: "Absol",
           level: 35,
-          ability: "Scrappy",
-          item: "Chople Berry",
+          ability: "Super Luck",
+          item: "Scope Lens",
           IVs: 31,
-          moves: ["Dizzy Punch", "Thunder Punch", "Fake Out", "Bulldoze"]
+          moves: ["Swords Dance", "Slash", "Double Team", "Bite"]
         },
         {
           species: "Dragonair",
@@ -566,12 +566,12 @@ const bosses = [
           moves: ["Psyshock", "Reflect", "Light Screen", "Charm"]
         },
         {
-          species: "Kangaskhan",
+          species: "Absol",
           level: 35,
-          ability: "Scrappy",
-          item: "Chople Berry",
+          ability: "Super Luck",
+          item: "Scope Lens",
           IVs: 31,
-          moves: ["Dizzy Punch", "Fire Punch", "Fake Out", "Bulldoze"]
+          moves: ["Swords Dance", "Slash", "Double Team", "Bite"]
         },
         {
           species: "Dragonair",
@@ -608,12 +608,12 @@ const bosses = [
           moves: ["Psyshock", "Charm", "Light Screen", "Reflect"]
         },
         {
-          species: "Kangaskhan",
+          species: "Absol",
           level: 35,
-          ability: "Scrappy",
-          item: "Chople Berry",
+          ability: "Super Luck",
+          item: "Scope Lens",
           IVs: 31,
-          moves: ["Dizzy Punch", "Fake Out", "Ice Punch", "Bulldoze"]
+          moves: ["Swords Dance", "Slash", "Double Team", "Bite"]
         },
         {
           species: "Dragonair",
@@ -650,12 +650,12 @@ const bosses = [
           moves: ["Psyshock", "Charm", "Light Screen", "Reflect"]
         },
         {
-          species: "Kangaskhan",
+          species: "Absol",
           level: 35,
-          ability: "Scrappy",
-          item: "Chople Berry",
+          ability: "Super Luck",
+          item: "Scope Lens",
           IVs: 31,
-          moves: ["Dizzy Punch", "Thunder Punch", "Fake Out", "Bulldoze"]
+          moves: ["Swords Dance", "Slash", "Double Team", "Bite"]
         },
         {
           species: "Dragonair",
@@ -692,12 +692,12 @@ const bosses = [
           moves: ["Psyshock", "Reflect", "Light Screen", "Charm"]
         },
         {
-          species: "Kangaskhan",
+          species: "Absol",
           level: 35,
-          ability: "Scrappy",
-          item: "Chople Berry",
+          ability: "Super Luck",
+          item: "Scope Lens",
           IVs: 31,
-          moves: ["Dizzy Punch", "Fire Punch", "Fake Out", "Bulldoze"]
+          moves: ["Swords Dance", "Slash", "Double Team", "Bite"]
         },
         {
           species: "Dragonair",
@@ -725,8 +725,8 @@ const bosses = [
         }
       ]
     },
-    storyBefore: "Reflection Cave",
-    storyAfter: "Shalour City"
+    storyBefore: "Shalour City Gym",
+    storyAfter: "Reflection Cave"
   },
   // 9. Korrina - Shalour City Gym
   {
@@ -827,12 +827,12 @@ const bosses = [
         moves: ["Psychic", "Reflect", "Thunder Wave", "Light Screen"]
       },
       {
-        species: "Kangaskhan",
+        species: "Absol",
         level: 40,
-        ability: "Scrappy",
+        ability: "Super Luck",
         item: "Life Orb",
         IVs: 31,
-        moves: ["Return", "Crunch", "Bulldoze", "Ice Punch"]
+        moves: ["Psycho Cut", "Night Slash", "Swords Dance", "Slash"]
       },
       {
         species: "Dragonair",
@@ -869,12 +869,12 @@ const bosses = [
         moves: ["Psychic", "Reflect", "Thunder Wave", "Light Screen"]
       },
       {
-        species: "Kangaskhan",
+        species: "Absol",
         level: 40,
-        ability: "Scrappy",
+        ability: "Super Luck",
         item: "Life Orb",
         IVs: 31,
-        moves: ["Return", "Crunch", "Thunder Punch", "Bulldoze"]
+        moves: ["Psycho Cut", "Night Slash", "Swords Dance", "Slash"]
       },
       {
         species: "Dragonair",
@@ -910,12 +910,12 @@ const bosses = [
         moves: ["Psychic", "Reflect", "Thunder Wave", "Light Screen"]
       },
       {
-        species: "Kangaskhan",
+        species: "Absol",
         level: 40,
-        ability: "Scrappy",
+        ability: "Super Luck",
         item: "Life Orb",
         IVs: 31,
-        moves: ["Return", "Crunch", "Fire Punch", "Bulldoze"]
+        moves: ["Psycho Cut", "Night Slash", "Swords Dance", "Slash"]
       },
       {
         species: "Dragonair",
@@ -952,12 +952,12 @@ const bosses = [
         moves: ["Psychic", "Reflect", "Thunder Wave", "Light Screen"]
       },
       {
-        species: "Kangaskhan",
+        species: "Absol",
         level: 40,
-        ability: "Scrappy",
+        ability: "Super Luck",
         item: "Life Orb",
         IVs: 31,
-        moves: ["Return", "Crunch", "Bulldoze", "Ice Punch"]
+        moves: ["Psycho Cut", "Night Slash", "Swords Dance", "Slash"]
       },
       {
         species: "Dragonair",
@@ -994,12 +994,12 @@ const bosses = [
         moves: ["Psychic", "Reflect", "Thunder Wave", "Light Screen"]
       },
       {
-        species: "Kangaskhan",
+        species: "Absol",
         level: 40,
-        ability: "Scrappy",
+        ability: "Super Luck",
         item: "Life Orb",
         IVs: 31,
-        moves: ["Return", "Crunch", "Thunder Punch", "Bulldoze"]
+        moves: ["Psycho Cut", "Night Slash", "Swords Dance", "Slash"]
       },
       {
         species: "Dragonair",
@@ -1035,12 +1035,12 @@ const bosses = [
         moves: ["Psychic", "Reflect", "Thunder Wave", "Light Screen"]
       },
       {
-        species: "Kangaskhan",
+        species: "Absol",
         level: 40,
-        ability: "Scrappy",
+        ability: "Super Luck",
         item: "Life Orb",
         IVs: 31,
-        moves: ["Return", "Crunch", "Fire Punch", "Bulldoze"]
+        moves: ["Psycho Cut", "Night Slash", "Swords Dance", "Slash"]
       },
       {
         species: "Dragonair",
@@ -1068,7 +1068,7 @@ const bosses = [
       }
     ]
   },
-  storyBefore: "Route 12 (Fourrage Road)",
+  storyBefore: "Route 13 (Lumiose Badlands)",
   storyAfter: "Azure Bay"
 },
 // 12. Ramos – Coumarine Gym
@@ -1128,8 +1128,8 @@ const bosses = [
       moves: ["Bulk Up", "Horn Leech", "Earthquake", "Wild Charge"]
     }
   ],
-  storyBefore: "Azure Bay",
-  storyAfter: "Route 13 (Lumiose Badlands)"
+  storyBefore: "Route 13 (Lumiose Badlands)",
+  storyAfter: "Azure Bay"
 },
 // 13. Alianna – Power Plant
 {
@@ -1180,8 +1180,8 @@ const bosses = [
       moves: ["Arm Thrust", "Pin Missile", "Night Slash", "Bullet Seed"]
     }
   ],
-  storyBefore: "Route 13 (Lumiose Badlands)",
-  storyAfter: "Route 14 (Laverre Nature Trail)"
+  storyBefore: "Route 14 (Laverre Nature Trail)",
+  storyAfter: "Route 13 (Lumiose Badlands)"
 },
 // 14. Clemont – Lumiose Gym
 {
@@ -1240,8 +1240,8 @@ const bosses = [
       moves: ["Thunderbolt", "Surf", "Focus Blast", "Grass Knot"]
     }
   ],
-  storyBefore: "Route 13 (Lumiose Badlands)",
-  storyAfter: "Route 14 (Laverre Nature Trail)"
+  storyBefore: "Route 14 (Laverre Nature Trail)",
+  storyAfter: "Route 13 (Lumiose Badlands)"
 },
 // 15. Calem/Serena – Route 14
 {

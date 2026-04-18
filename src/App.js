@@ -121,6 +121,8 @@ function formatMethodLabel(label) {
     .replace(/tall grass/gi, "Tall Grass")
     .replace(/shallow water/gi, "Shallow Water")
     .replace(/dirt mound/gi, "Dirt Mound")
+    .replace(/glittering cave guaranteed fossils/gi, "Glittering Cave Guaranteed Fossils")
+    .replace(/held item fossils/gi, "Held Item Fossils")
     .replace(/\s+/g, " ")
     .trim();
 }
