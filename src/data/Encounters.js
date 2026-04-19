@@ -817,6 +817,21 @@ const defaultEncounters = [
     "area": "Ambrette Town",
     "status": "Available",
     "pokemon": {
+      "glitteringCaveGuaranteedFossils": [
+        "Tyrunt",
+        "Amaura"
+      ],
+      "heldItemFossils": [
+        "Omanyte",
+        "Kabuto",
+        "Aerodactyl",
+        "Lileep",
+        "Anorith",
+        "Cranidos",
+        "Shieldon",
+        "Tirtouga",
+        "Archen"
+      ],
       "rockSmash": [
         "Dwebble",
         "Binacle"
@@ -840,6 +855,8 @@ const defaultEncounters = [
       ]
     },
     "methodLevels": {
+      "glitteringCaveGuaranteedFossils": "Revive",
+      "heldItemFossils": "Revive",
       "rockSmash": "Level 18-20",
       "oldRod": "Level 21-22",
       "goodRod": "Level 35",
@@ -847,6 +864,21 @@ const defaultEncounters = [
       "surf": "Level 32-34"
     },
     "methodRates": {
+      "glitteringCaveGuaranteedFossils": {
+        "Tyrunt": 100,
+        "Amaura": 100
+      },
+      "heldItemFossils": {
+        "Omanyte": 100,
+        "Kabuto": 100,
+        "Aerodactyl": 100,
+        "Lileep": 100,
+        "Anorith": 100,
+        "Cranidos": 100,
+        "Shieldon": 100,
+        "Tirtouga": 100,
+        "Archen": 100
+      },
       "rockSmash": {
         "Dwebble": 66,
         "Binacle": 34
@@ -953,21 +985,6 @@ const defaultEncounters = [
     "area": "Cyllage City",
     "status": "Available",
     "pokemon": {
-      "glitteringCaveGuaranteedFossils": [
-        "Tyrunt",
-        "Amaura"
-      ],
-      "heldItemFossils": [
-        "Omanyte",
-        "Kabuto",
-        "Aerodactyl",
-        "Lileep",
-        "Anorith",
-        "Cranidos",
-        "Shieldon",
-        "Tirtouga",
-        "Archen"
-      ],
       "rockSmash": [
         "Krabby",
         "Onix",
@@ -994,8 +1011,6 @@ const defaultEncounters = [
       ]
     },
     "methodLevels": {
-      "glitteringCaveGuaranteedFossils": "Revive",
-      "heldItemFossils": "Revive",
       "rockSmash": "Level 24-26",
       "oldRod": "Level 26",
       "goodRod": "Level 35",
@@ -1003,21 +1018,6 @@ const defaultEncounters = [
       "surf": "Level 32-34"
     },
     "methodRates": {
-      "glitteringCaveGuaranteedFossils": {
-        "Tyrunt": 100,
-        "Amaura": 100
-      },
-      "heldItemFossils": {
-        "Omanyte": 100,
-        "Kabuto": 100,
-        "Aerodactyl": 100,
-        "Lileep": 100,
-        "Anorith": 100,
-        "Cranidos": 100,
-        "Shieldon": 100,
-        "Tirtouga": 100,
-        "Archen": 100
-      },
       "rockSmash": {
         "Krabby": 50,
         "Onix": 35,
