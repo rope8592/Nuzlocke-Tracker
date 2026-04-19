@@ -1380,6 +1380,29 @@ const groupedFilteredGraveyard = filteredGraveyard.reduce((acc, mon) => {
                             ))}
                           </>
                         )}
+                        {boss.doubleTeams && (
+                          <>
+                            {Object.entries(boss.doubleTeams).map(([trainerName, trainerTeam]) => (
+                              <div key={`double-${trainerName}`}>
+                                <div style={{ margin: "10px 0 2px 0" }}>
+                                  <b>{trainerName} Team:</b>
+                                </div>
+                                <ul style={{ marginTop: 2 }}>
+                                  {trainerTeam.map((mon, i) => (
+                                    <li key={`double-${trainerName}-${i}`}>
+                                      {mon.species} (Lv. {mon.level}
+                                      {mon.item ? `, @${mon.item}` : ""}
+                                      {mon.ability ? `, Ability: ${mon.ability}` : ""}
+                                      {mon.ivs ? `, IVs: ${mon.ivs}` : ""}
+                                      {mon.moves ? `, Moves: ${mon.moves.join(" / ")}` : ""}
+                                      )
+                                    </li>
+                                  ))}
+                                </ul>
+                              </div>
+                            ))}
+                          </>
+                        )}
                         {conditionalTeam && (
                           <>
                             <div style={{ margin: "10px 0 2px 0" }}>
