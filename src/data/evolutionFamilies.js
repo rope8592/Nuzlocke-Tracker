@@ -1308,14 +1308,14 @@ const evolutionFamilies = {
   phantump: ["Phantump", "Trevenant"],
   trevenant: ["Phantump", "Trevenant"],
 
-  pumpkaboo: [
-    "Pumpkaboo", "Pumpkaboo-Small", "Pumpkaboo-Large", "Pumpkaboo-Super", "Gourgeist",
-    "Gourgeist-Small", "Gourgeist-Large", "Gourgeist-Super"
-  ],
-  gourgeist: [
-    "Pumpkaboo", "Pumpkaboo-Small", "Pumpkaboo-Large", "Pumpkaboo-Super", "Gourgeist",
-    "Gourgeist-Small", "Gourgeist-Large", "Gourgeist-Super"
-  ],
+  pumpkaboo: ["Pumpkaboo", "Gourgeist"],
+  pumpkaboo_small: ["Pumpkaboo-Small", "Gourgeist-Small"],
+  pumpkaboo_large: ["Pumpkaboo-Large", "Gourgeist-Large"],
+  pumpkaboo_super: ["Pumpkaboo-Super", "Gourgeist-Super"],
+  gourgeist: ["Pumpkaboo", "Gourgeist"],
+  gourgeist_small: ["Pumpkaboo-Small", "Gourgeist-Small"],
+  gourgeist_large: ["Pumpkaboo-Large", "Gourgeist-Large"],
+  gourgeist_super: ["Pumpkaboo-Super", "Gourgeist-Super"],
 
   bergmite: ["Bergmite", "Avalugg", "Hisuian Avalugg"],
   avalugg: ["Bergmite", "Avalugg", "Hisuian Avalugg"],

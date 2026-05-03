@@ -312,6 +312,14 @@ function App() {
     return all;
   };
 
+  const getSelectorPokemonOptions = (possibleMons, selectedMon) => {
+    const options = [...possibleMons];
+    if (selectedMon && !options.includes(selectedMon)) {
+      options.push(selectedMon);
+    }
+    return options;
+  };
+
   const getAllCaughtSpecies = (ignoreIdx = -1) => {
     const caught = encounters
       .filter((e, i) => i !== ignoreIdx && e.status === "Caught" && e.caughtPokemon)
@@ -455,6 +463,20 @@ function App() {
       nextForm = "Beautifly";
     } else if (key === "cascoon") {
       nextForm = "Dustox";
+    } else if (key === "pumpkaboo") {
+      const choice = window.prompt("Evolve Pumpkaboo into which Gourgeist size? Small, Average, Large, or Super", "Average");
+      if (choice === null) return;
+      const normalizedChoice = String(choice).trim().toLowerCase();
+      if (normalizedChoice.startsWith("small")) nextForm = "Gourgeist-Small";
+      else if (normalizedChoice.startsWith("large")) nextForm = "Gourgeist-Large";
+      else if (normalizedChoice.startsWith("super")) nextForm = "Gourgeist-Super";
+      else nextForm = "Gourgeist";
+    } else if (key === "pumpkaboo_small") {
+      nextForm = "Gourgeist-Small";
+    } else if (key === "pumpkaboo_large") {
+      nextForm = "Gourgeist-Large";
+    } else if (key === "pumpkaboo_super") {
+      nextForm = "Gourgeist-Super";
     } else {
       const family = evolutionFamilies[key] || [id];
       const curIdx = family.map((f) => normalizeEvolutionKey(f)).indexOf(key);
@@ -1138,12 +1160,11 @@ const groupedFilteredGraveyard = filteredGraveyard.reduce((acc, mon) => {
                           }
                           disabled={
                             entry.status !== "Available" ||
-                            entry.shiny ||
-                            dupeMons.includes(entry.caughtPokemon)
+                            entry.shiny
                           }
                         >
                           <option value="">--</option>
-                          {possibleMons
+                          {getSelectorPokemonOptions(possibleMons, entry.caughtPokemon)
                             .filter(
                               (m) =>
                                 !caughtSpecies.has(normalizeEvolutionKey(m)) ||
@@ -1178,7 +1199,7 @@ const groupedFilteredGraveyard = filteredGraveyard.reduce((acc, mon) => {
                               }
                             >
                               <option value="">--</option>
-                              {shinyMons.map((m) => (
+                              {getSelectorPokemonOptions(shinyMons, entry.shinyPokemon).map((m) => (
                                 <option key={m} value={m}>
                                   {m}
                                 </option>
@@ -1316,6 +1337,20 @@ const groupedFilteredGraveyard = filteredGraveyard.reduce((acc, mon) => {
                       <span style={{ color: "#cbd5e1", fontSize: 14 }}>
                         ({boss.location || "?"}) | Level Cap: {boss.levelCap || "?"}
                       </span>
+                      {boss.battleType && (
+                        <span
+                          style={{
+                            marginLeft: 8,
+                            fontSize: 12,
+                            padding: "3px 8px",
+                            borderRadius: 999,
+                            background: "#374151",
+                            color: "#e5e7eb",
+                          }}
+                        >
+                          {boss.battleType}
+                        </span>
+                      )}
                       <span style={{ float: "right", fontWeight: 400 }}>
                         {isOpen ? "▲" : "▼"}
                       </span>

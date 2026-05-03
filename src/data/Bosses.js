@@ -374,8 +374,8 @@ const bosses = [
         }
       ]
     },
-    storyBefore: "Route 7 (Rivière Walk)",
-    storyAfter: "Connecting Cave: Zubat Roost"
+    storyBefore: "Connecting Cave: Zubat Roost",
+    storyAfter: "Berry Fields"
   },
   // 6. Grant - Cyllage City Gym
  {
@@ -434,8 +434,8 @@ const bosses = [
       moves: ["Fire Fang", "Ice Fang", "Dragon Dance", "Rock Tomb"]
     }
   ],
-  storyBefore: "Cyllage City",
-  storyAfter: "Route 10 (Menhir Trail)"
+  storyBefore: "Route 10 (Menhir Trail)",
+  storyAfter: "Cyllage City"
 },
 
   // 7. Korrina - Geosenge Town
@@ -725,8 +725,8 @@ const bosses = [
         }
       ]
     },
-    storyBefore: "Shalour City Gym",
-    storyAfter: "Reflection Cave"
+    storyBefore: "Tower of Mastery",
+    storyAfter: "Shalour City"
   },
   // 9. Korrina - Shalour City Gym
   {
@@ -785,8 +785,8 @@ const bosses = [
       moves: ["Acrobatics", "Flying Press", "Fire Punch", "Iron Head"]
     }
   ],
-  storyBefore: "Shalour City",
-  storyAfter: "Tower of Mastery"
+  storyBefore: "Tower of Mastery",
+  storyAfter: "Shalour City"
 },
   // 10. Korrina - Tower of Mastery (Mega Lucario)
   {
@@ -806,7 +806,7 @@ const bosses = [
       }
     ],
     storyBefore: "Tower of Mastery",
-    storyAfter: "Route 12 (Fourrage Road)"
+    storyAfter: "Shalour City"
   },
  
   // 11. Calem/Serena – Coumarine City (ALL starter/player combos)
@@ -1613,8 +1613,8 @@ const bosses = [
       moves: ["Iron Head", "Play Rough", "Sucker Punch", "Foul Play"]
     }
   ],
-  storyBefore: "Laverre City",
-  storyAfter: "Route 15 (Brun Way)"
+  storyBefore: "Route 15 (Brun Way)",
+  storyAfter: "Laverre City"
 },
 
   // 17. Celosia & Bryony – Poké Ball Factory
@@ -1726,8 +1726,8 @@ const bosses = [
       }
     ]
   },
-  storyBefore: "Laverre City",
-  storyAfter: "Route 15 (Brun Way)"
+  storyBefore: "Route 15 (Brun Way)",
+  storyAfter: "Laverre City"
 },
 
   // 18. Mable – Frost Cavern
@@ -1787,8 +1787,8 @@ const bosses = [
       moves: ["Flamethrower", "Dark Pulse", "Sludge Bomb", "Hidden Power"]
     }
   ],
-  storyBefore: "Frost Cavern",
-  storyAfter: "Route 17 (Mamoswine Road)"
+  storyBefore: "Route 17 (Mamoswine Road)",
+  storyAfter: "Frost Cavern"
 },
 
   // 19. Calem/Serena – Anistar City (ALL starter/player combos)
@@ -1817,12 +1817,12 @@ const bosses = [
           moves: ["Thunder", "Signal Beam", "Shadow Ball", "Baton Pass"]
         },
         {
-          species: "Kangaskhan",
+          species: "Absol",
           level: 60,
-          ability: "Scrappy",
-          item: "Kangaskhanite",
+          ability: "Super Luck",
+          item: "White Herb",
           IVs: 31,
-          moves: ["Return", "Seismic Toss", "Sucker Punch", "Drain Punch"]
+          moves: ["Superpower", "Night Slash", "Play Rough", "Sucker Punch"]
         },
         {
           species: "Clefable",
@@ -1867,12 +1867,12 @@ const bosses = [
           moves: ["Flare Blitz", "Superpower", "Quick Attack", "Protect"]
         },
         {
-          species: "Kangaskhan",
+          species: "Absol",
           level: 60,
-          ability: "Scrappy",
-          item: "Kangaskhanite",
+          ability: "Super Luck",
+          item: "White Herb",
           IVs: 31,
-          moves: ["Return", "Seismic Toss", "Sucker Punch", "Drain Punch"]
+          moves: ["Superpower", "Night Slash", "Play Rough", "Sucker Punch"]
         },
         {
           species: "Clefable",
@@ -1917,12 +1917,12 @@ const bosses = [
           moves: ["Scald", "Acid Armor", "Aqua Ring", "Baton Pass"]
         },
         {
-          species: "Kangaskhan",
+          species: "Absol",
           level: 60,
-          ability: "Scrappy",
-          item: "Kangaskhanite",
+          ability: "Super Luck",
+          item: "White Herb",
           IVs: 31,
-          moves: ["Return", "Seismic Toss", "Drain Punch", "Sucker Punch"]
+          moves: ["Superpower", "Night Slash", "Play Rough", "Sucker Punch"]
         },
         {
           species: "Clefable",
@@ -1967,12 +1967,12 @@ const bosses = [
           moves: ["Thunder", "Signal Beam", "Shadow Ball", "Baton Pass"]
         },
         {
-          species: "Kangaskhan",
+          species: "Absol",
           level: 60,
-          ability: "Scrappy",
-          item: "Kangaskhanite",
+          ability: "Super Luck",
+          item: "White Herb",
           IVs: 31,
-          moves: ["Return", "Seismic Toss", "Sucker Punch", "Drain Punch"]
+          moves: ["Superpower", "Night Slash", "Play Rough", "Sucker Punch"]
         },
         {
           species: "Clefable",
@@ -2017,12 +2017,12 @@ const bosses = [
           moves: ["Flare Blitz", "Superpower", "Quick Attack", "Protect"]
         },
         {
-          species: "Kangaskhan",
+          species: "Absol",
           level: 60,
-          ability: "Scrappy",
-          item: "Kangaskhanite",
+          ability: "Super Luck",
+          item: "White Herb",
           IVs: 31,
-          moves: ["Return", "Seismic Toss", "Sucker Punch", "Drain Punch"]
+          moves: ["Superpower", "Night Slash", "Play Rough", "Sucker Punch"]
         },
         {
           species: "Clefable",
@@ -2067,12 +2067,12 @@ const bosses = [
           moves: ["Scald", "Acid Armor", "Aqua Ring", "Baton Pass"]
         },
         {
-          species: "Kangaskhan",
+          species: "Absol",
           level: 60,
-          ability: "Scrappy",
-          item: "Kangaskhanite",
+          ability: "Super Luck",
+          item: "White Herb",
           IVs: 31,
-          moves: ["Return", "Seismic Toss", "Drain Punch", "Sucker Punch"]
+          moves: ["Superpower", "Night Slash", "Play Rough", "Sucker Punch"]
         },
         {
           species: "Clefable",
@@ -2100,8 +2100,8 @@ const bosses = [
         }
       ]
     },
-    storyBefore: "Route 17 (Mamoswine Road)",
-    storyAfter: "Team Flare Secret HQ"
+    storyBefore: "Post Route 17 MamoswineRd",
+    storyAfter: "Route 17 (Mamoswine Road)"
   },
   // 20. Olympia – Anistar Gym
  {
@@ -2160,8 +2160,8 @@ const bosses = [
       moves: ["Drain Punch", "Zen Headbutt", "Ice Punch", "Poison Jab"]
     }
   ],
-  storyBefore: "Route 17 (Mamoswine Road)",
-  storyAfter: "Team Flare Secret HQ"
+  storyBefore: "Post Route 17 MamoswineRd",
+  storyAfter: "Route 17 (Mamoswine Road)"
 },
 
   // 21. Lysandre – Lysandre Labs (First Battle)
@@ -2201,8 +2201,8 @@ const bosses = [
       moves: ["Aqua Tail", "Earthquake", "Iron Head", "Crunch"]
     }
   ],
-  storyBefore: "Route 17 (Mamoswine Road)",
-  storyAfter: "Team Flare Secret HQ"
+  storyBefore: "Post Route 17 MamoswineRd",
+  storyAfter: "Route 17 (Mamoswine Road)"
 },
 
   // 22. Aliana – Lysandre Labs
@@ -2262,8 +2262,8 @@ const bosses = [
       moves: ["Arm Thrust", "Pin Missile", "Knock Off", "Rock Blast"]
     }
   ],
-  storyBefore: "Route 17 (Mamoswine Road)",
-  storyAfter: "Team Flare Secret HQ"
+  storyBefore: "Post Route 17 MamoswineRd",
+  storyAfter: "Route 17 (Mamoswine Road)"
 },
 
   // 23. Bryony – Lysandre Labs
@@ -2323,8 +2323,8 @@ const bosses = [
       moves: ["Earthquake", "Quick Attack", "Double-Edge", "Stone Edge"]
     }
   ],
-  storyBefore: "Route 17 (Mamoswine Road)",
-  storyAfter: "Team Flare Secret HQ"
+  storyBefore: "Post Route 17 MamoswineRd",
+  storyAfter: "Route 17 (Mamoswine Road)"
 },
 
   // 24. Celosia – Lysandre Labs
@@ -2384,8 +2384,8 @@ const bosses = [
       moves: ["Thunderbolt", "Flamethrower", "Signal Beam", "Charge Beam"]
     }
   ],
-  storyBefore: "Route 17 (Mamoswine Road)",
-  storyAfter: "Team Flare Secret HQ"
+  storyBefore: "Post Route 17 MamoswineRd",
+  storyAfter: "Route 17 (Mamoswine Road)"
 },
 
   // 25. Mable – Lysandre Labs
@@ -2445,8 +2445,8 @@ const bosses = [
       moves: ["Dark Pulse", "Sludge Bomb", "Fire Blast", "Nasty Plot"]
     }
   ],
-  storyBefore: "Route 17 (Mamoswine Road)",
-  storyAfter: "Team Flare Secret HQ"
+  storyBefore: "Post Route 17 MamoswineRd",
+  storyAfter: "Route 17 (Mamoswine Road)"
 },
 
   // 26. Xerosic – Lysandre Labs
@@ -2506,8 +2506,8 @@ const bosses = [
       moves: ["Bullet Punch", "Bug Bite", "Strength", "Swords Dance"]
     }
   ],
-  storyBefore: "Route 17 (Mamoswine Road)",
-  storyAfter: "Team Flare Secret HQ"
+  storyBefore: "Post Route 17 MamoswineRd",
+  storyAfter: "Route 17 (Mamoswine Road)"
 },
 
   // 27. Lysandre – Flare HQ (Second Battle)
@@ -2554,8 +2554,8 @@ const bosses = [
       moves: ["Aqua Tail", "Earthquake", "Iron Head", "Crunch"]
     }
   ],
-  storyBefore: "Team Flare Secret HQ",
-  storyAfter: "Route 18 (Vallée Étroite Way)"
+  storyBefore: "After Secret HQ Done",
+  storyAfter: "Route 17 (Mamoswine Road)"
 },
   // 28. Lysandre – Flare HQ (Final Battle)
   {
@@ -2614,8 +2614,8 @@ const bosses = [
       moves: ["Waterfall", "Earthquake", "Crunch", "Dragon Dance"]
     }
   ],
-  storyBefore: "Team Flare Secret HQ",
-  storyAfter: "Route 18 (Vallée Étroite Way)"
+  storyBefore: "After Secret HQ Done",
+  storyAfter: "Team Flare Secret HQ"
 },
   // 29. Professor Sycamore – Couriway Town
   {
@@ -2650,8 +2650,8 @@ const bosses = [
         moves: ["Scald", "Aura Sphere", "Ice Beam", "Dragon Pulse"]
       }
     ],
-    storyBefore: "Couriway Town",
-    storyAfter: "Route 19 (Grande Vallée Way)"
+    storyBefore: "Route 19 (Grande Vallée Way)",
+    storyAfter: "Couriway Town"
   },
   // 30. Shauna – Route 19 (ALL starter/player combos)
   {
@@ -2659,12 +2659,12 @@ const bosses = [
   name: "Shauna",
   location: "Route 19",
   sprite: "shauna.png",
-  levelCap: 69,
+  levelCap: 66,
   conditionalTeams: {
     "Chespin_Serena": [
       {
         species: "Sylveon",
-        level: 67,
+        level: 64,
         ability: "Pixilate",
         item: "Life Orb",
         IVs: 31,
@@ -2672,7 +2672,7 @@ const bosses = [
       },
       {
         species: "Goodra",
-        level: 67,
+        level: 64,
         ability: "Sap Sipper",
         item: "Assault Vest",
         IVs: 31,
@@ -2680,7 +2680,7 @@ const bosses = [
       },
       {
         species: "Cinccino",
-        level: 67,
+        level: 64,
         ability: "Skill Link",
         item: "King’s Rock",
         IVs: 31,
@@ -2688,7 +2688,7 @@ const bosses = [
       },
       {
         species: "Rapidash",
-        level: 67,
+        level: 64,
         ability: "Reckless",
         item: "Sitrus Berry",
         IVs: 31,
@@ -2696,7 +2696,7 @@ const bosses = [
       },
       {
         species: "Roserade",
-        level: 67,
+        level: 64,
         ability: "Natural Cure",
         item: "Black Sludge",
         IVs: 31,
@@ -2704,7 +2704,7 @@ const bosses = [
       },
       {
         species: "Greninja",
-        level: 69,
+        level: 66,
         ability: "Protean",
         item: "Flying Gem",
         IVs: 31,
@@ -2714,7 +2714,7 @@ const bosses = [
     "Fennekin_Serena": [
       {
         species: "Sylveon",
-        level: 67,
+        level: 64,
         ability: "Pixilate",
         item: "Life Orb",
         IVs: 31,
@@ -2722,7 +2722,7 @@ const bosses = [
       },
       {
         species: "Goodra",
-        level: 67,
+        level: 64,
         ability: "Sap Sipper",
         item: "Assault Vest",
         IVs: 31,
@@ -2730,7 +2730,7 @@ const bosses = [
       },
       {
         species: "Cinccino",
-        level: 67,
+        level: 64,
         ability: "Skill Link",
         item: "King’s Rock",
         IVs: 31,
@@ -2738,7 +2738,7 @@ const bosses = [
       },
       {
         species: "Rapidash",
-        level: 67,
+        level: 64,
         ability: "Reckless",
         item: "Sitrus Berry",
         IVs: 31,
@@ -2746,7 +2746,7 @@ const bosses = [
       },
       {
         species: "Lapras",
-        level: 67,
+        level: 64,
         ability: "Water Absorb",
         item: "Leftovers",
         IVs: 31,
@@ -2754,7 +2754,7 @@ const bosses = [
       },
       {
         species: "Chesnaught",
-        level: 69,
+        level: 66,
         ability: "Bulletproof",
         item: "Rocky Helmet",
         IVs: 31,
@@ -2764,7 +2764,7 @@ const bosses = [
     "Froakie_Serena": [
       {
         species: "Sylveon",
-        level: 67,
+        level: 64,
         ability: "Pixilate",
         item: "Life Orb",
         IVs: 31,
@@ -2772,7 +2772,7 @@ const bosses = [
       },
       {
         species: "Goodra",
-        level: 67,
+        level: 64,
         ability: "Sap Sipper",
         item: "Assault Vest",
         IVs: 31,
@@ -2780,7 +2780,7 @@ const bosses = [
       },
       {
         species: "Cinccino",
-        level: 67,
+        level: 64,
         ability: "Skill Link",
         item: "King’s Rock",
         IVs: 31,
@@ -2788,7 +2788,7 @@ const bosses = [
       },
       {
         species: "Lapras",
-        level: 67,
+        level: 64,
         ability: "Water Absorb",
         item: "Leftovers",
         IVs: 31,
@@ -2796,7 +2796,7 @@ const bosses = [
       },
       {
         species: "Roserade",
-        level: 67,
+        level: 64,
         ability: "Natural Cure",
         item: "Black Sludge",
         IVs: 31,
@@ -2804,7 +2804,7 @@ const bosses = [
       },
       {
         species: "Delphox",
-        level: 69,
+        level: 66,
         ability: "Magic Guard",
         item: "Expert Belt",
         IVs: 31,
@@ -2815,7 +2815,7 @@ const bosses = [
     "Chespin_Calem": [
       {
         species: "Sylveon",
-        level: 67,
+        level: 64,
         ability: "Pixilate",
         item: "Life Orb",
         IVs: 31,
@@ -2823,7 +2823,7 @@ const bosses = [
       },
       {
         species: "Goodra",
-        level: 67,
+        level: 64,
         ability: "Sap Sipper",
         item: "Assault Vest",
         IVs: 31,
@@ -2831,7 +2831,7 @@ const bosses = [
       },
       {
         species: "Cinccino",
-        level: 67,
+        level: 64,
         ability: "Skill Link",
         item: "King’s Rock",
         IVs: 31,
@@ -2839,7 +2839,7 @@ const bosses = [
       },
       {
         species: "Rapidash",
-        level: 67,
+        level: 64,
         ability: "Reckless",
         item: "Sitrus Berry",
         IVs: 31,
@@ -2847,7 +2847,7 @@ const bosses = [
       },
       {
         species: "Roserade",
-        level: 67,
+        level: 64,
         ability: "Natural Cure",
         item: "Black Sludge",
         IVs: 31,
@@ -2855,7 +2855,7 @@ const bosses = [
       },
       {
         species: "Greninja",
-        level: 69,
+        level: 66,
         ability: "Protean",
         item: "Flying Gem",
         IVs: 31,
@@ -2865,7 +2865,7 @@ const bosses = [
     "Fennekin_Calem": [
       {
         species: "Sylveon",
-        level: 67,
+        level: 64,
         ability: "Pixilate",
         item: "Life Orb",
         IVs: 31,
@@ -2873,7 +2873,7 @@ const bosses = [
       },
       {
         species: "Goodra",
-        level: 67,
+        level: 64,
         ability: "Sap Sipper",
         item: "Assault Vest",
         IVs: 31,
@@ -2881,7 +2881,7 @@ const bosses = [
       },
       {
         species: "Cinccino",
-        level: 67,
+        level: 64,
         ability: "Skill Link",
         item: "King’s Rock",
         IVs: 31,
@@ -2889,7 +2889,7 @@ const bosses = [
       },
       {
         species: "Rapidash",
-        level: 67,
+        level: 64,
         ability: "Reckless",
         item: "Sitrus Berry",
         IVs: 31,
@@ -2897,7 +2897,7 @@ const bosses = [
       },
       {
         species: "Lapras",
-        level: 67,
+        level: 64,
         ability: "Water Absorb",
         item: "Leftovers",
         IVs: 31,
@@ -2905,7 +2905,7 @@ const bosses = [
       },
       {
         species: "Chesnaught",
-        level: 69,
+        level: 66,
         ability: "Bulletproof",
         item: "Rocky Helmet",
         IVs: 31,
@@ -2915,7 +2915,7 @@ const bosses = [
     "Froakie_Calem": [
       {
         species: "Sylveon",
-        level: 67,
+        level: 64,
         ability: "Pixilate",
         item: "Life Orb",
         IVs: 31,
@@ -2923,7 +2923,7 @@ const bosses = [
       },
       {
         species: "Goodra",
-        level: 67,
+        level: 64,
         ability: "Sap Sipper",
         item: "Assault Vest",
         IVs: 31,
@@ -2931,7 +2931,7 @@ const bosses = [
       },
       {
         species: "Cinccino",
-        level: 67,
+        level: 64,
         ability: "Skill Link",
         item: "King’s Rock",
         IVs: 31,
@@ -2939,7 +2939,7 @@ const bosses = [
       },
       {
         species: "Lapras",
-        level: 67,
+        level: 64,
         ability: "Water Absorb",
         item: "Leftovers",
         IVs: 31,
@@ -2947,7 +2947,7 @@ const bosses = [
       },
       {
         species: "Roserade",
-        level: 67,
+        level: 64,
         ability: "Natural Cure",
         item: "Black Sludge",
         IVs: 31,
@@ -2955,7 +2955,7 @@ const bosses = [
       },
       {
         species: "Delphox",
-        level: 69,
+        level: 66,
         ability: "Magic Guard",
         item: "Expert Belt",
         IVs: 31,
@@ -2963,8 +2963,8 @@ const bosses = [
       }
     ]
   },
-  storyBefore: "Route 19 (Grande Vallée Way)",
-  storyAfter: "Route 20 (Winding Woods)"
+  storyBefore: "Route 20 (Winding Woods)",
+  storyAfter: "Route 19 (Grande Vallée Way)"
 },
   // 31. Tierno – Route 19
   {
@@ -2972,19 +2972,19 @@ const bosses = [
     name: "Tierno",
     location: "Route 19",
     sprite: "tierno.png",
-    levelCap: 69,
+    levelCap: 66,
     team: [
       {
         species: "Talonflame",
-        level: 67,
+        level: 64,
         ability: "Gale Wings",
         item: "Flying Gem",
         IVs: 31,
-        moves: ["Swords Dance", "Acrobatics", "Roost", "Flare Blitz"]
+        moves: ["Swords Dance", "Acrobatics", "U-turn", "Flare Blitz"]
       },
       {
         species: "Lilligant",
-        level: 67,
+        level: 64,
         ability: "Own Tempo",
         item: "Leftovers",
         IVs: 31,
@@ -2992,7 +2992,7 @@ const bosses = [
       },
       {
         species: "Ludicolo",
-        level: 67,
+        level: 64,
         ability: "Swift Swim",
         item: "Damp Rock",
         IVs: 31,
@@ -3000,7 +3000,7 @@ const bosses = [
       },
       {
         species: "Volcarona",
-        level: 67,
+        level: 64,
         ability: "Flame Body",
         item: "Life Orb",
         IVs: 31,
@@ -3008,7 +3008,7 @@ const bosses = [
       },
       {
         species: "Kingdra",
-        level: 67,
+        level: 64,
         ability: "Swift Swim",
         item: "Roseli Berry",
         IVs: 31,
@@ -3016,15 +3016,15 @@ const bosses = [
       },
       {
         species: "Crawdaunt",
-        level: 69,
+        level: 66,
         ability: "Adaptability",
         item: "Focus Sash",
         IVs: 31,
         moves: ["Crabhammer", "Crunch", "Swords Dance", "Aqua Jet"]
       }
     ],
-    storyBefore: "Route 19 (Grande Vallée Way)",
-    storyAfter: "Route 20 (Winding Woods)"
+    storyBefore: "Route 20 (Winding Woods)",
+    storyAfter: "Route 19 (Grande Vallée Way)"
   },
   // 32. Trevor – Route 19
   {
@@ -3040,7 +3040,7 @@ const bosses = [
         ability: "Lightning Rod",
         item: "Expert Belt",
         IVs: 31,
-        moves: ["Thunderbolt", "Focus Blast", "Grass Knot", "Surf"]
+        moves: ["Thunderbolt", "Fake Out", "Focus Blast", "Grass Knot"]
       },
       {
         species: "Aerodactyl",
@@ -3080,11 +3080,11 @@ const bosses = [
         ability: "Natural Cure",
         item: "Leftovers",
         IVs: 31,
-        moves: ["Moonblast", "Calm Mind", "Leech Seed", "Earth Power"]
+        moves: ["Moonblast", "Calm Mind", "Energy Ball", "Earth Power"]
       }
     ],
-    storyBefore: "Route 19 (Grande Vallée Way)",
-    storyAfter: "Route 20 (Winding Woods)"
+    storyBefore: "Route 20 (Winding Woods)",
+    storyAfter: "Route 19 (Grande Vallée Way)"
   },
   // 33. Wulfric – Snowbelle Gym
  {
@@ -3093,6 +3093,7 @@ const bosses = [
   location: "Snowbelle Gym",
   sprite: "wulfric.png",
   levelCap: 78, // Abomasnow is the highest
+  battleType: "Double Battle",
   team: [
     {
       species: "Aurorus",
@@ -3143,8 +3144,8 @@ const bosses = [
       moves: ["Blizzard", "Giga Drain", "Focus Blast", "Ice Shard"]
     }
   ],
-  storyBefore: "Pokémon Village",
-  storyAfter: "Route 21 (Dernière Way)"
+  storyBefore: "Route 21 (Dernière Way)",
+  storyAfter: "Pokémon Village"
 },
   // 34. Calem/Serena – Victory Road (ALL starter/player combos)
   {
@@ -3157,7 +3158,7 @@ const bosses = [
       "Chespin_Serena": [
         {
           species: "Meowstic",
-          level: 76,
+          level: 77,
           ability: "Prankster",
           item: "Sitrus Berry",
           IVs: 31,
@@ -3172,28 +3173,12 @@ const bosses = [
           moves: ["Thunder", "Signal Beam", "Shadow Ball", "Baton Pass"]
         },
         {
-          species: "Kangaskhan",
-          level: 77,
-          ability: "Scrappy",
-          item: "Kangaskhanite",
-          IVs: 31,
-          moves: ["Double-Edge", "Power-Up Punch", "Sucker Punch", "Earthquake"]
-        },
-        {
           species: "Clefable",
-          level: 77,
-          ability: "Unaware",
+          level: 76,
+          ability: "Magic Guard",
           item: "Leftovers",
           IVs: 31,
-          moves: ["Moonblast", "Stealth Rock", "Thunder Wave", "Soft-Boiled"]
-        },
-        {
-          species: "Celebi",
-          level: 76,
-          ability: "Natural Cure",
-          item: "Salac Berry",
-          IVs: 31,
-          moves: ["Earth Power", "Giga Drain", "Nasty Plot", "Baton Pass"]
+          moves: ["Moonblast", "Cosmic Power", "Soft-Boiled", "Thunder Wave"]
         },
         {
           species: "Dragonite",
@@ -3201,7 +3186,7 @@ const bosses = [
           ability: "Multiscale",
           item: "Lum Berry",
           IVs: 31,
-          moves: ["Dragon Dance", "Earthquake", "Outrage", "Waterfall"]
+          moves: ["Hurricane", "Dragon Dance", "Outrage", "Earthquake"]
         },
         {
           species: "Delphox",
@@ -3209,13 +3194,21 @@ const bosses = [
           ability: "Magic Guard",
           item: "Life Orb",
           IVs: 31,
-          moves: ["Psychic", "Fire Blast", "Thunderbolt", "Aura Sphere"]
+          moves: ["Psychic", "Fire Blast", "Aura Sphere", "Shadow Ball"]
+        },
+        {
+          species: "Absol",
+          level: 78,
+          ability: "Super Luck",
+          item: "Absolite",
+          IVs: 31,
+          moves: ["Night Slash", "Play Rough", "Sucker Punch", "Superpower"]
         }
       ],
       "Fennekin_Serena": [
         {
           species: "Meowstic",
-          level: 76,
+          level: 77,
           ability: "Prankster",
           item: "Sitrus Berry",
           IVs: 31,
@@ -3230,28 +3223,12 @@ const bosses = [
           moves: ["Flare Blitz", "Superpower", "Quick Attack", "Protect"]
         },
         {
-          species: "Kangaskhan",
-          level: 77,
-          ability: "Scrappy",
-          item: "Kangaskhanite",
-          IVs: 31,
-          moves: ["Double-Edge", "Power-Up Punch", "Sucker Punch", "Earthquake"]
-        },
-        {
           species: "Clefable",
-          level: 77,
+          level: 76,
           ability: "Magic Guard",
           item: "Leftovers",
           IVs: 31,
-          moves: ["Moonblast", "Stealth Rock", "Soft-Boiled", "Thunder Wave"]
-        },
-        {
-          species: "Victini",
-          level: 76,
-          ability: "Victory Star",
-          item: "Expert Belt",
-          IVs: 31,
-          moves: ["V-create", "Bolt Strike", "Glaciate", "Grass Knot"]
+          moves: ["Moonblast", "Cosmic Power", "Soft-Boiled", "Thunder Wave"]
         },
         {
           species: "Dragonite",
@@ -3259,15 +3236,7 @@ const bosses = [
           ability: "Multiscale",
           item: "Lum Berry",
           IVs: 31,
-          moves: ["Dragon Dance", "Outrage", "Thunder Punch", "Earthquake"]
-        },
-        {
-          species: "Scizor",
-          level: 76,
-          ability: "Technician",
-          item: "Leftovers",
-          IVs: 31,
-          moves: ["Bullet Punch", "U-turn", "Knock Off", "Roost"]
+          moves: ["Hurricane", "Dragon Dance", "Outrage", "Earthquake"]
         },
         {
           species: "Greninja",
@@ -3275,13 +3244,21 @@ const bosses = [
           ability: "Protean",
           item: "Life Orb",
           IVs: 31,
-          moves: ["Hydro Pump", "Gunk Shot", "Ice Beam", "Extrasensory"]
+          moves: ["Hydro Pump", "Dark Pulse", "Extrasensory", "Ice Beam"]
+        },
+        {
+          species: "Absol",
+          level: 78,
+          ability: "Super Luck",
+          item: "Absolite",
+          IVs: 31,
+          moves: ["Night Slash", "Play Rough", "Sucker Punch", "Superpower"]
         }
       ],
       "Froakie_Serena": [
         {
           species: "Meowstic",
-          level: 76,
+          level: 77,
           ability: "Prankster",
           item: "Sitrus Berry",
           IVs: 31,
@@ -3296,28 +3273,12 @@ const bosses = [
           moves: ["Scald", "Acid Armor", "Aqua Ring", "Baton Pass"]
         },
         {
-          species: "Kangaskhan",
-          level: 77,
-          ability: "Scrappy",
-          item: "Kangaskhanite",
-          IVs: 31,
-          moves: ["Double-Edge", "Power-Up Punch", "Sucker Punch", "Earthquake"]
-        },
-        {
           species: "Clefable",
-          level: 77,
+          level: 76,
           ability: "Magic Guard",
           item: "Leftovers",
           IVs: 31,
-          moves: ["Moonblast", "Stealth Rock", "Rain Dance", "Thunder Wave"]
-        },
-        {
-          species: "Manaphy",
-          level: 76,
-          ability: "Hydration",
-          item: "Leftovers",
-          IVs: 31,
-          moves: ["Scald", "Ice Beam", "Tail Glow", "Energy Ball"]
+          moves: ["Moonblast", "Cosmic Power", "Soft-Boiled", "Thunder Wave"]
         },
         {
           species: "Dragonite",
@@ -3325,29 +3286,29 @@ const bosses = [
           ability: "Multiscale",
           item: "Lum Berry",
           IVs: 31,
-          moves: ["Dragon Dance", "Outrage", "Earthquake", "Hurricane"]
-        },
-        {
-          species: "Scizor",
-          level: 76,
-          ability: "Technician",
-          item: "Life Orb",
-          IVs: 31,
-          moves: ["Bullet Punch", "U-turn", "Strength", "Swords Dance"]
+          moves: ["Hurricane", "Dragon Dance", "Outrage", "Earthquake"]
         },
         {
           species: "Chesnaught",
           level: 78,
           ability: "Bulletproof",
-          item: "White Herb",
+          item: "Rocky Helmet",
           IVs: 31,
-          moves: ["Seed Bomb", "Drain Punch", "Stone Edge", "Shell Smash"]
+          moves: ["Seed Bomb", "Drain Punch", "Spiky Shield", "Hammer Arm"]
+        },
+        {
+          species: "Absol",
+          level: 78,
+          ability: "Super Luck",
+          item: "Absolite",
+          IVs: 31,
+          moves: ["Night Slash", "Play Rough", "Sucker Punch", "Superpower"]
         }
       ],
       "Chespin_Calem": [
         {
           species: "Meowstic",
-          level: 76,
+          level: 77,
           ability: "Prankster",
           item: "Sitrus Berry",
           IVs: 31,
@@ -3362,28 +3323,12 @@ const bosses = [
           moves: ["Thunder", "Signal Beam", "Shadow Ball", "Baton Pass"]
         },
         {
-          species: "Kangaskhan",
-          level: 77,
-          ability: "Scrappy",
-          item: "Kangaskhanite",
-          IVs: 31,
-          moves: ["Double-Edge", "Power-Up Punch", "Sucker Punch", "Earthquake"]
-        },
-        {
           species: "Clefable",
-          level: 77,
-          ability: "Unaware",
+          level: 76,
+          ability: "Magic Guard",
           item: "Leftovers",
           IVs: 31,
-          moves: ["Moonblast", "Stealth Rock", "Thunder Wave", "Soft-Boiled"]
-        },
-        {
-          species: "Celebi",
-          level: 76,
-          ability: "Natural Cure",
-          item: "Salac Berry",
-          IVs: 31,
-          moves: ["Earth Power", "Giga Drain", "Nasty Plot", "Baton Pass"]
+          moves: ["Moonblast", "Cosmic Power", "Soft-Boiled", "Thunder Wave"]
         },
         {
           species: "Dragonite",
@@ -3391,7 +3336,7 @@ const bosses = [
           ability: "Multiscale",
           item: "Lum Berry",
           IVs: 31,
-          moves: ["Dragon Dance", "Earthquake", "Outrage", "Waterfall"]
+          moves: ["Hurricane", "Dragon Dance", "Outrage", "Earthquake"]
         },
         {
           species: "Delphox",
@@ -3399,13 +3344,21 @@ const bosses = [
           ability: "Magic Guard",
           item: "Life Orb",
           IVs: 31,
-          moves: ["Psychic", "Fire Blast", "Thunderbolt", "Aura Sphere"]
+          moves: ["Psychic", "Fire Blast", "Aura Sphere", "Shadow Ball"]
+        },
+        {
+          species: "Absol",
+          level: 78,
+          ability: "Super Luck",
+          item: "Absolite",
+          IVs: 31,
+          moves: ["Night Slash", "Play Rough", "Sucker Punch", "Superpower"]
         }
       ],
       "Fennekin_Calem": [
         {
           species: "Meowstic",
-          level: 76,
+          level: 77,
           ability: "Prankster",
           item: "Sitrus Berry",
           IVs: 31,
@@ -3420,28 +3373,12 @@ const bosses = [
           moves: ["Flare Blitz", "Superpower", "Quick Attack", "Protect"]
         },
         {
-          species: "Kangaskhan",
-          level: 77,
-          ability: "Scrappy",
-          item: "Kangaskhanite",
-          IVs: 31,
-          moves: ["Double-Edge", "Power-Up Punch", "Sucker Punch", "Earthquake"]
-        },
-        {
           species: "Clefable",
-          level: 77,
+          level: 76,
           ability: "Magic Guard",
           item: "Leftovers",
           IVs: 31,
-          moves: ["Moonblast", "Stealth Rock", "Soft-Boiled", "Thunder Wave"]
-        },
-        {
-          species: "Victini",
-          level: 76,
-          ability: "Victory Star",
-          item: "Expert Belt",
-          IVs: 31,
-          moves: ["V-create", "Bolt Strike", "Glaciate", "Grass Knot"]
+          moves: ["Moonblast", "Cosmic Power", "Soft-Boiled", "Thunder Wave"]
         },
         {
           species: "Dragonite",
@@ -3449,15 +3386,7 @@ const bosses = [
           ability: "Multiscale",
           item: "Lum Berry",
           IVs: 31,
-          moves: ["Dragon Dance", "Outrage", "Thunder Punch", "Earthquake"]
-        },
-        {
-          species: "Scizor",
-          level: 76,
-          ability: "Technician",
-          item: "Leftovers",
-          IVs: 31,
-          moves: ["Bullet Punch", "U-turn", "Knock Off", "Roost"]
+          moves: ["Hurricane", "Dragon Dance", "Outrage", "Earthquake"]
         },
         {
           species: "Greninja",
@@ -3465,13 +3394,21 @@ const bosses = [
           ability: "Protean",
           item: "Life Orb",
           IVs: 31,
-          moves: ["Hydro Pump", "Gunk Shot", "Ice Beam", "Extrasensory"]
+          moves: ["Hydro Pump", "Dark Pulse", "Extrasensory", "Ice Beam"]
+        },
+        {
+          species: "Absol",
+          level: 78,
+          ability: "Super Luck",
+          item: "Absolite",
+          IVs: 31,
+          moves: ["Night Slash", "Play Rough", "Sucker Punch", "Superpower"]
         }
       ],
       "Froakie_Calem": [
         {
           species: "Meowstic",
-          level: 76,
+          level: 77,
           ability: "Prankster",
           item: "Sitrus Berry",
           IVs: 31,
@@ -3486,28 +3423,12 @@ const bosses = [
           moves: ["Scald", "Acid Armor", "Aqua Ring", "Baton Pass"]
         },
         {
-          species: "Kangaskhan",
-          level: 77,
-          ability: "Scrappy",
-          item: "Kangaskhanite",
-          IVs: 31,
-          moves: ["Double-Edge", "Power-Up Punch", "Sucker Punch", "Earthquake"]
-        },
-        {
           species: "Clefable",
-          level: 77,
+          level: 76,
           ability: "Magic Guard",
           item: "Leftovers",
           IVs: 31,
-          moves: ["Moonblast", "Stealth Rock", "Rain Dance", "Thunder Wave"]
-        },
-        {
-          species: "Manaphy",
-          level: 76,
-          ability: "Hydration",
-          item: "Leftovers",
-          IVs: 31,
-          moves: ["Scald", "Ice Beam", "Tail Glow", "Energy Ball"]
+          moves: ["Moonblast", "Cosmic Power", "Soft-Boiled", "Thunder Wave"]
         },
         {
           species: "Dragonite",
@@ -3515,28 +3436,28 @@ const bosses = [
           ability: "Multiscale",
           item: "Lum Berry",
           IVs: 31,
-          moves: ["Dragon Dance", "Outrage", "Earthquake", "Hurricane"]
-        },
-        {
-          species: "Scizor",
-          level: 76,
-          ability: "Technician",
-          item: "Life Orb",
-          IVs: 31,
-          moves: ["Bullet Punch", "U-turn", "Strength", "Swords Dance"]
+          moves: ["Hurricane", "Dragon Dance", "Outrage", "Earthquake"]
         },
         {
           species: "Chesnaught",
           level: 78,
           ability: "Bulletproof",
-          item: "White Herb",
+          item: "Rocky Helmet",
           IVs: 31,
-          moves: ["Seed Bomb", "Drain Punch", "Stone Edge", "Shell Smash"]
+          moves: ["Seed Bomb", "Drain Punch", "Spiky Shield", "Hammer Arm"]
+        },
+        {
+          species: "Absol",
+          level: 78,
+          ability: "Super Luck",
+          item: "Absolite",
+          IVs: 31,
+          moves: ["Night Slash", "Play Rough", "Sucker Punch", "Superpower"]
         }
       ]
     },
-    storyBefore: "Victory Road",
-    storyAfter: "Unknown Dungeon (Post-Game)"
+    storyBefore: "Elite Four Malva",
+    storyAfter: "Victory Road"
   },
   // 35. Malva – Elite Four
   {
@@ -3545,6 +3466,7 @@ const bosses = [
   location: "Pokémon League",
   sprite: "malva.png",
   levelCap: 82, // Talonflame & Charizard are the highest
+  battleType: "Double Battle",
   team: [
     {
       species: "Ninetales",
@@ -3595,8 +3517,8 @@ const bosses = [
       moves: ["Heat Wave", "Solar Beam", "Air Slash", "Dragon Pulse"]
     }
   ],
-  storyBefore: "Victory Road",
-  storyAfter: "Unknown Dungeon (Post-Game)"
+  storyBefore: "Post Victory",
+  storyAfter: "Victory Road"
 },
 
   // 36. Siebold – Elite Four
@@ -3606,6 +3528,7 @@ const bosses = [
   location: "Pokémon League",
   sprite: "siebold.png",
   levelCap: 82, // Barbaracle & Blastoise are the highest
+  battleType: "Triple Battle",
   team: [
     {
       species: "Kingdra",
@@ -3656,8 +3579,8 @@ const bosses = [
       moves: ["Dark Pulse", "Aura Sphere", "Dragon Pulse", "Muddy Water"]
     }
   ],
-  storyBefore: "Victory Road",
-  storyAfter: "Unknown Dungeon (Post-Game)"
+  storyBefore: "Post Victory",
+  storyAfter: "Victory Road"
 },
   // 37. Wikstrom – Elite Four
   {
@@ -3666,6 +3589,7 @@ const bosses = [
   location: "Pokémon League",
   sprite: "wikstrom.png",
   levelCap: 82, // Aggron & Aegislash highest
+  battleType: "Rotation Battle",
   team: [
     {
       species: "Klefki",
@@ -3716,8 +3640,8 @@ const bosses = [
       moves: ["Heavy Slam", "Earthquake", "Stone Edge", "Ice Punch"]
     }
   ],
-  storyBefore: "Victory Road",
-  storyAfter: "Unknown Dungeon (Post-Game)"
+  storyBefore: "Post Victory",
+  storyAfter: "Victory Road"
 },
   // 38. Drasna – Elite Four
   {
@@ -3726,6 +3650,7 @@ const bosses = [
   location: "Pokémon League",
   sprite: "drasna.png",
   levelCap: 82, // Noivern/Charizard highest
+  battleType: "Single Battle",
   team: [
     {
       species: "Hydreigon",
@@ -3776,8 +3701,8 @@ const bosses = [
       moves: ["Dragon Dance", "Dragon Claw", "Flare Blitz", "Brick Break"]
     }
   ],
-  storyBefore: "Victory Road",
-  storyAfter: "Unknown Dungeon (Post-Game)"
+  storyBefore: "Post Victory",
+  storyAfter: "Victory Road"
 },
   // 39. Diantha – Champion
   {
@@ -3836,8 +3761,8 @@ const bosses = [
       moves: ["Hyper Voice", "Psyshock", "Shadow Ball", "Focus Blast"]
     }
   ],
-  storyBefore: "Victory Road",
-  storyAfter: "Unknown Dungeon (Post-Game)"
+  storyBefore: "Post Victory",
+  storyAfter: "Victory Road"
 },
   // 40. AZ – Lumiose City
 {
@@ -3885,11 +3810,11 @@ const bosses = [
       ability: "Pressure",
       item: "Aerodactylite",
       IVs: 31,
-      moves: ["Aerial Ace", "Return", "Earthquake"]
+      moves: ["Aerial Ace", "Return", "Earthquake", "Brave Bird"]
     }
   ],
-  storyBefore: "Victory Road",
-  storyAfter: "Unknown Dungeon (Post-Game)"
+  storyBefore: "Post Victory",
+  storyAfter: "Victory Road"
 },
 ];
 
